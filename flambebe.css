@@ -738,3 +738,18 @@ font-size: 15px !important;
     color: #970404 !important;
 
 }
+
+.container.main::after {
+content: "";
+background-image: url('https://i.ibb.co/zHnKc8SD/image.png');
+background-size: cover;
+position: fixed;
+display: block;
+height:270px;
+width:200px;
+right: 0px;
+bottom: 7px;
+z-index: 100;
+pointer-events:none;
+    filter: drop-shadow(5px 5px 3px rgba(8,11,56,0.4));
+}
