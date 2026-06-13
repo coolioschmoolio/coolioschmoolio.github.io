@@ -1,0 +1,579 @@
+/* FONT (From Google Fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
+:root {
+  --main-font: "Lacquer", system-ui;
+}
+
+/* BACKGROUND */
+body {
+	background: url('https://images7.alphacoders.com/803/thumb-1920-803819.png') center center fixed;
+	background-size: 100%;
+	font-family: 'Quicksand', sans-serif;
+	color: #d6dce2;}
+}
+
+/* MAIN PANEL */
+@media only screen and (max-width: 767px) {.container.main .hidden-xs {display: block !important;}}
+@media only screen and (max-width: 991px) and (min-width: 768px) {display: block !important;}
+@media only screen and (min-width: 1200px) {div.quote {width: 790px;}}
+.container.main {
+	background: linear-gradient(90deg, rgba(16,18,21,0.85) 0%, rgba(15,18,21,0.8) 20%, rgba(15,18,21,0.8) 80%, rgba(16,18,21,0.85) 100%);
+	border: 1px solid #000000;
+	box-shadow: 0 0 55px rgba(0,0,0,0.8);
+	border-radius: 3px;
+}
+.col-md-9 {
+	background: none;
+    border-right: none;
+}
+
+/* TOPBAR, NAVBAR */
+:root {
+  --primary-color: #131313;
+  --secondary-color: #3c4c5e;
+  --middle-color: #22262b;
+  --flat-color: #36404b;
+  --font-color: #d6dce2;
+  --border-color: #7f8892;
+}
+:root {
+  --overlay-image: url('https://i.ibb.co/0jNCHwXV/rain.png');
+}
+.topbar,.navbar,.panel {
+    color: var(--font-color); 
+    font-family: 'Quicksand', sans-serif;
+}
+.topbar {
+	background: var(--overlay-image) repeat center center, linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 80%);
+	border: 1px solid var(--border-color);
+	border-top: none;
+	border-radius: 10px;
+}
+.navbar {
+	background: var(--overlay-image) repeat center center, linear-gradient(270deg, var(--primary-color) 0%, var(--secondary-color) 80%);
+    border: 1px solid var(--border-color);
+	border-radius: 3px;
+}
+.navbar li a {
+	color: #d6dce2 !important;
+    text-shadow: 0px 0px 3px #131313 !important;
+    transition: 0.2s;
+}
+.navbar li a:hover {
+    background: none !important;
+    transform: scale(1.15);
+}
+
+/* SIDE PANEL */
+.panel {
+	background: var(--overlay-image) repeat center center, linear-gradient(45deg, var(--middle-color) 0%, var(--flat-color) 50%, var(--secondary-color) 100%) !important;
+	box-shadow: none !important;
+	color: var(--font-color) !important; 
+	border: 1px solid var(--border-color) !important;
+	border-radius: 15px;
+        filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.5));
+}
+.panel-body {
+    color: var(--font-color) !important; 
+}
+.progress {
+	background: #37383e; /*energy bar background*/
+	border-radius: 20px !important;
+}
+.progress div {
+	color: #ccd2dd !important;
+}
+.progress:nth-child(1) .progress-bar {
+    background: rgb(165,178,191,0.8);
+    border-radius: 5px !important
+}
+.progress:nth-child(2) .progress-bar {
+    background: rgba(165,178,191, .65);
+    border-radius: 5px !important
+}
+.progress:nth-child(3) .progress-bar {
+    background: rgba(165,178,191, .4);
+    border-radius: 5px !important
+}
+.progress:nth-child(4) .progress-bar {
+    background: rgba(165,178,191, .25);
+    border-radius: 5px !important
+}
+
+/* BREADCRUMB, BOOKMARK */
+.breadcrumb {
+	background: #3F4853;
+    border: 1px solid var(--border-color);
+	border-radius: 10px;
+        filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.4));
+}
+.breadcrumb .active {
+	color: #b6bec8;
+}
+.breadcrumb::after {
+    content: "‧₊˚☔︎︎ ☂︎₊˚⊹";
+    color: var(--font-color);   
+    position: absolute;
+    right: 13%;
+    z-index: 100;
+}
+input.floatright { /*bookmark*/
+	background: #363C42 !important;
+	border: 1px solid #000000 !important;
+	color: #b6bec8 !important;
+	border-radius: 15px !important;
+    font-weight: normal !important;
+    filter: drop-shadow(0px 0px 0px rgba(136,140,153,0.0001));
+}
+@media only screen and (max-width: 1199px) and (min-width: 992px)  {
+        .breadcrumb::after {
+            right: 20%;
+        }
+    }
+
+    @media only screen and (max-width: 991px) and (min-width: 768px)  {
+        .breadcrumb::after {
+            right: 20%;
+        }
+    }
+
+    @media only screen and (max-width: 767px) {
+        .breadcrumb::after {
+            right: 22%;
+        }
+    }
+
+/* HEADERS */
+h1 {
+    font-size: 68px;
+    background: -webkit-linear-gradient(270deg, #B0C2D0 0%, #778b99 60%, rgba(24,30,34,0.4) 100%);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1.2px rgba(4,14,22,0.5);
+    font-family: var(--main-font);
+    text-transform: uppercase;
+	text-align: center;
+    text-decoration: none;
+}
+h2 {
+	color: #79858e;
+    font-family: var(--main-font);
+	font-size: 24px;
+	text-align: center;
+}
+h3 {
+	color: #79858e !important;
+    font-family: var(--main-font);
+	font-size: 20px !important
+}
+.sidebar h3 {
+    background: -webkit-linear-gradient(270deg, #B0C2D0 0%, #778b99 60%, rgba(24,30,34,0.4) 100%);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     -webkit-text-stroke: 0.4px rgba(0,0,0,0.5);
+    font-size: 20px !important;
+	text-align: left;
+    text-decoration: none; 
+    text-shadow: none !important;
+        transition: 0.2s;
+}
+.sidebar h3:hover {
+    transform: scale(1.05);
+}
+
+/* ALERTS */
+.alert {
+	background: linear-gradient(270deg, var(--middle-color) 0%, var(--secondary-color) 50%, var(--middle-color) 100%);
+	border: 1px solid var(--border-color);
+	color: var(--font-color);
+	border-radius: 10px !important;
+}
+.alert-warning,.alert-danger {
+	background: linear-gradient(270deg, var(--middle-color) 0%, var(--secondary-color) 50%, var(--middle-color) 100%);
+	color: var(--font-color);
+	border-radius: 10px !important;
+}
+
+/* BUTTONS, FAPA */
+button.button, button.button:hover,.btn-default {
+	background: var(--flat-color) !important;
+    color: var(--font-color) !important;
+	border: 1px solid var(--border-color) !important;
+	border-radius: 19px !important;
+    text-shadow: none !important;
+}
+.feature { 
+	background: var(--flat-color) !important;
+	color: var(--font-color);
+	border: 1px solid var(--border-color)!important;
+	border-radius: 10px;
+    
+}
+.feature,
+div.left {
+	background: var(--flat-color);
+	border: 1px solid var(--border-color);
+	border-radius: 5px !important;
+}
+input#btnToggleSidebarChat {
+	background: var(--flat-color) !important;
+	border: 1px solid var(--border-color) !important;
+	border-radius: 2px !important;
+    font-weight: normal !important;
+}
+
+/* PANEL BACKGROUND COLOR */
+.table {
+	background: linear-gradient(90deg, #060e18 0%, #232f3e 50%, #060e18 100%);
+	border: 1px solid #000000 !important;
+	border-collapse: separate;
+	border-radius: 3px;
+        filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.6));
+}
+/*HIDE WISHLIST/GIFT/ETC ICONS*/
+img[src$="icon_den_wishlist.png"] {display: none;}
+img[src$="icon_den_friend.png"] {display: none;}
+img[src$="icon_den_message.png"] {display: none;}
+img[src$="icon_den_gift.png"] {display: none;}
+img[src$="icon_den_trade.png"] {display: none;}
+img[src$="icon_den_viewtrade.png"] {display: none;}
+img[src$="icon_den_block.png"] {display: none;}
+/*HIDDEN :|: DIVIDERS*/ span.text-muted {visibility: hidden;margin: -5px;}
+/*REMOVE PLAYER BOX DIVIDER*/ tbody hr {display:none;}
+
+/* HEADERS COLOR */
+.top,.bottom,th {
+	background: var(--overlay-image) repeat center center, linear-gradient(270deg, var(--middle-color) 0%, var(--secondary-color) 50%, var(--middle-color) 100%)!important;
+	color: var(--font-color) !important;
+    border-bottom: 1px solid var(--border-color) !important;
+	border-radius: 3px;
+}
+td.bottom a {
+    text-decoration: none !important;
+}
+
+/* EDIT DETAILS BOX */
+.table .left {
+	background: #2d353e;
+    color: #b2bbc6 !important;
+}
+input,select,textarea { 
+	background: #b2bbc6 !important;
+	border: none !important;
+	border-radius: 5px;
+	box-shadow: none !important;
+	color: black !important;
+	text-shadow: none !important;
+}
+
+/* MAIN PANELS */
+.inner-table .left { /*level, stats, etc.*/
+	background: #343643 !important; 
+	border-radius: 5px;
+    color: #87919c !important;
+}
+.inner-table .right { /*where the numbers and stuff go*/
+	background: #636d77;
+	border-radius: 5px !important;
+    color: #343643 !important;
+}
+td.right {
+	border-radius: 3px !important;
+}
+.right_odd {
+	background: none !important;
+}
+
+/* LINKS & LINK HOVER COLOR */
+a:link,a:visited {
+	color: #8c959d !important;
+     text-shadow: 0px 0px 3px #131313 !important;
+    transition: 0.2s;
+}
+.top a, .bottom a, .th a {
+    color: #8c959d !important;
+}
+.cave-grid a, .mound-grid a {
+    color: #8c959d !important;
+}
+a:hover {
+	color: #e9f0f7 !important;
+}
+
+/* BOX CONTAINER */
+
+    @media only screen and (max-width: 767px) {
+        .container.main .hidden-xs {
+            display: block !important;
+        }
+    }
+
+.boxcontainer {
+	background: none;
+	height: auto;
+	padding: 0px;
+	justify-content: center;
+	display: flex;
+}
+
+/* BOXES */
+.Box1 {
+	float: left;
+	background:  linear-gradient(180deg, #070F19 0%, #151F2B 50%, #202C3A 100%);
+	color: #bec5cc;
+	padding: 10px;
+	border: 1px solid #7F8892;
+	border-radius: 5px;
+	margin: 10px;
+	overflow: auto;
+	height: auto;
+	max-height: 250px;
+	width: 250px;
+	margin-bottom: 15px;
+        filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.4));
+}
+.Box2 {
+	float: left;
+	background:  linear-gradient(180deg, #070F19 0%, #151F2B 50%, #202C3A 100%);
+	color: #bec5cc;
+	padding: 10px;
+	border: 1px solid #7F8892;
+	border-radius: 10px;
+	margin: 10px;
+	height: auto;
+	max-height: 250px;
+	width: 385px;
+	overflow: auto;
+        filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.4));
+}
+.Box3 {
+	float: left;
+	background: linear-gradient(180deg, #070F19 0%, #151F2B 50%, #202C3A 100%);
+	color: #bec5cc;
+	padding: 10px;
+	border: 1px solid #7F8892;
+	border-radius: 10px;
+	margin: 10px;
+	height: auto;
+	max-height: 300px;
+	width: 790px;
+	overflow: auto;
+        filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.4));
+}
+
+.BoxRainfall {
+	float: left;
+	background: linear-gradient(180deg, #070F19 0%, #151F2B 50%, #202C3A 100%);
+	color: #bec5cc;
+	padding: 10px;
+	border: 1px solid #7F8892;
+	border-radius: 10px;
+	margin-bottom: 20px;
+    height: 150px;
+	width: 600px;
+	overflow: auto;
+    filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.4));
+}
+.TinyRainfall {
+	background: none;
+	color: none;
+	padding: 0px;
+	border: none;
+	margin: 0px;
+	width: 116px;; 
+    height: 120px;
+	position: relative;
+	bottom: -40px;
+	left: 0px;
+	z-index: 1;
+	overflow: hidden;
+	margin-left: -60px;
+        filter: drop-shadow(7px 7px 10px rgba(0,0,0,0.6));
+    transition-duration: 0.3s;    
+}
+.TinyRainfall:hover {
+    transform: rotate(7deg) scale(1.05);
+     transition-duration: 0.3s;
+}
+/* SCROLL BAR */
+::-webkit-scrollbar {
+	width: 12px;
+	height: 7px;
+}
+::-webkit-scrollbar-track {
+	background: var(--primary-color);
+}
+::-webkit-scrollbar-thumb {
+	background: var(--secondary-color);
+	border-radius: 0px;
+}
+
+/* SCROLL BAR */
+::-webkit-scrollbar {
+	width: 12px;
+	height: 7px;
+}
+::-webkit-scrollbar-track {
+	background: var(--primary-color);
+}
+::-webkit-scrollbar-thumb {
+	background: var(--secondary-color);
+	border-radius: 10px;
+}
+
+/* CIRCULAR LION AND USER AVATAR */
+div#lion_image {
+	border-radius: 20% !important;
+	overflow: hidden;
+	margin-top: 15px;
+	margin-left: 10px;
+    border: 2px solid var(--border-color);
+    transition: 0.2s;
+}
+div#lion_image:hover {
+    background: none !important;
+    transform: scale(1.05);
+}
+table#player img {
+	border-radius: 0% !important;
+	overflow: hidden;
+    transition: 0.2s;
+}
+table#player img:hover {
+    background: none !important;
+    transform: scale(1.05);
+}
+
+/* Affects the color behind "_ Unsorted", "_ Pregnant Lionesses", etc. and cave/mound names */
+.cave-grid,.mound-grid {
+	background: linear-gradient(180deg, var(--flat-color) 0%, var(--secondary-color) 100%) !important;
+	border: 1px solid var(--border-color) !important;
+    color: var(--font-color) !important;
+	border-radius: 5px !important;
+}
+
+/* CAVES AND MOUNDS */
+img[src$="//static.lioden.com/images/layout/unsortedlionsbanner.png"] {
+    content: url('https://static.lioden.com/images/items/Other/cloudburststains.png') !important;
+    height:60px;
+    width: 60px; 
+}
+img[src$="//static.lioden.com/images/layout/nestingbanner.png"] {
+    content: url('https://static.lioden.com/images/items/Other/app_markmurk.png') !important;
+    filter: sepia(100%) hue-rotate(190deg) saturate(70%);
+    height:60px;
+    width: 60px;
+}
+img[src$="//static.lioden.com/images/layout/prideoverviewbanner.png"] {
+    content: url('https://www.lioden.com/images/items/Other/app_angM.png') !important;
+    filter: sepia(100%) hue-rotate(190deg) saturate(50%);
+    height:60px;
+    width: 60px;
+}
+img[src$="//static.lioden.com/images/layout/cavedefault.jpg"] {
+    content: url('https://static.lioden.com/images/dynamic/backgrounds/drowned_pirates_01.png') !important;
+    height:100px;
+   	object-fit: cover;
+   	object-position: 0% 0;
+   	min-width: 0 !important;
+   	width: 100% !important;
+}
+.mound-grid img {
+    background: url("IMG");
+    width: 0;
+    height: 0;
+    padding-top: 0px;
+    padding-right: 100px;
+}
+
+/* COMMENT BOX*/
+div#commentBox, div.comment {
+    background: #b3bcc6 !important;
+    color: #15263a;
+    border: 1px solid rgba(53,53,60,0.2);
+}
+small.text-muted {color: #2a3a4d;}
+small.text-muted a {color: #2a3a4d !important;
+}
+#commentBox::before { /*comment box header*/
+    content: "brave enough to face the storm?";
+    background: linear-gradient(270deg, var(--middle-color) 0%, var(--secondary-color) 50%, var(--middle-color)100%);
+    font-weight: bold;
+    color: var(--font-color);
+    width: 100%;
+    height: 35px;
+    display: block;
+    padding-top:7px !important;
+    position: sticky!important;
+    top: 0px;
+}
+div#commentBox {
+    background: #b3bcc6 !important;
+    height: 35px;
+    overflow-y: hidden !important;
+    transition: 1s;
+}
+#commentBox:hover {
+    height: 225px !important;
+    overflow-y: scroll !important;
+    transition: 1s;
+}
+
+img[src$="default.png"] {
+    content: url("https://static.lioden.com/images/dynamic/backgrounds/drowned_pirates_01.png"); 
+}
+
+/* IMAGES */
+div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img { /*lioden logo*/ 
+	content: url('https://i.ibb.co/bggVRVKj/vl.png');
+        margin-left: -50px;
+    transform: scale(0.9);
+    transition:0.3s;
+}
+div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img:hover {
+ transform: rotate(-7deg) scale(1);
+}
+img[src$="icon-beetle-gold.png"] {
+    content: url("https://i.ibb.co/Jj7xWXPF/blackbebke.png") !important;
+    width: 20px !important;
+}
+img[src$="icon-beetle-silver.png"] {
+    content: url("https://i.ibb.co/604RxB8n/beeblea.png") !important;
+    width: 20px !important;
+}
+img[src$="den_ancestors.png"] {
+    content:url('https://www.lioden.com/images/items/Other/app_victor.png')!important;
+    width:75px!important; 
+    height:75px !important;
+    background:none!important;
+    filter: sepia(100%) hue-rotate(190deg) saturate(50%);
+}
+img[src$="ancestorsfem.png"] {
+    content:url('https://www.lioden.com/images/items/Other/app_bluepm.png')!important;
+    width:75px!important; 
+    height:75px !important;
+    background:none!important;
+     filter: sepia(100%) hue-rotate(190deg) saturate(50%);
+}
+img[src$="den_achievements.png"] {
+    content:url('https://www.lioden.com/images/items/Other/apptrophy.png')!important;
+    width:75px!important; 
+    height:75px !important;
+    background:none!important;
+     filter: sepia(100%) hue-rotate(190deg) saturate(50%);
+}
+img[src$="den_showcase.png"] {
+    content:url('https://www.lioden.com/images/items/Other/app_marula.png')!important;
+    width:75px!important; 
+    height:75px !important;
+    background:none!important;
+     filter: sepia(100%) hue-rotate(190deg) saturate(50%);
+}
+img[src$="den_beetlebook.png"] {
+    content:url('https://www.lioden.com/images/items/Other/app_medalbase.png')!important;
+    width:75px!important; 
+    height:75px !important;
+    background:none!important;
+     filter: sepia(100%) hue-rotate(190deg) saturate(50%);
+}
