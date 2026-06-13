@@ -10,7 +10,7 @@ body {
 	background: url('URL') center center fixed;
 	background-size: 100%;
 	font-family: 'Quicksand', sans-serif;
-	color: #000000;}
+	color: var(--font-color); 
 }
 
 /* MAIN PANEL */
