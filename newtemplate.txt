@@ -199,13 +199,14 @@ button.button, button.button:hover,.btn-default {
 	border: 1px solid var(--border-color) !important;
 	border-radius: 19px !important;
     text-shadow: none !important;
-	filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.7)) !important;
+	filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.7)) !important;
 }
 .feature { 
 	background: var(--flat-color) !important;
 	color: var(--font-color);
 	border: 1px solid var(--border-color)!important;
 	border-radius: 10px;
+	filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.7)) !important;
 }
 .feature,
 div.left {
@@ -227,6 +228,9 @@ input#btnToggleSidebarChat {
 	border-collapse: separate;
 	border-radius: 3px;
 	filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.7)) !important;
+}
+hr {
+    visibility: hidden;
 }
 
 /* HEADERS COLOR */
@@ -272,11 +276,11 @@ td.right {
 .right_odd {
 	background: none !important;
 }
-#clans .left {
+#clans .left, #allies .left {
     visibility: hidden;
 }
 .bigger img {
-    filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.7));
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.5));
 }
 /* LINKS & LINK HOVER COLOR */
 a:link,a:visited {
@@ -311,7 +315,7 @@ a:hover {
 /* BOXES */
 .Box1 {
 	float: left;
-	background: #ffffff;
+	background: linear-gradient(180deg, #ffffff 0%, #afafaf 50%, #444444 100%);
 	color: #000000;
 	padding: 10px;
 	border: 1px solid #000000;
@@ -325,7 +329,7 @@ a:hover {
 }
 .Box2 {
 	float: left;
-	background: #ffffff;
+	background: linear-gradient(180deg, #ffffff 0%, #afafaf 50%, #444444 100%);
 	color: #000000;
 	padding: 10px;
 	border: 1px solid #000000;
@@ -338,7 +342,7 @@ a:hover {
 }
 .Box3 {
 	float: left;
-	background: #ffffff;
+	background: linear-gradient(180deg, #ffffff 0%, #afafaf 50%, #444444 100%);
 	color: #000000;
 	padding: 10px;
 	border: 1px solid #000000;
@@ -360,7 +364,7 @@ a:hover {
 }
 ::-webkit-scrollbar-thumb {
 	background: var(--secondary-color);
-	border-radius: 0px;
+	border-radius: 10px;
 }
 
 /* CIRCULAR LION AND USER AVATAR */
@@ -388,18 +392,18 @@ table#player img {
 /* CAVES AND MOUNDS */
 img[src$="//static.lioden.com/images/layout/unsortedlionsbanner.png"] {
     content: url('URL') !important;
-    height:60px;
-    width: 60px; 
+    height:80px;
+    width: 80px; 
 }
 img[src$="//static.lioden.com/images/layout/nestingbanner.png"] {
     content: url('URL') !important;
-    height:60px;
-    width: 60px;
+    height:80px;
+    width: 80px;
 }
 img[src$="//static.lioden.com/images/layout/prideoverviewbanner.png"] {
     content: url('URL') !important;
-    height:60px;
-    width: 60px;
+    height:80px;
+    width: 80px;
 }
 img[src$="//static.lioden.com/images/layout/cavedefault.jpg"] {
     content: url('URL') !important;
@@ -410,11 +414,15 @@ img[src$="//static.lioden.com/images/layout/cavedefault.jpg"] {
    	width: 100% !important;
 }
 .mound-grid img {
-    background: url("IMG");
+    background: url("URL");
     width: 0;
+    background-size: 60px !important; 
+    background-repeat: no-repeat;
+    background-size: cover;     
     height: 0;
-    padding-top: 80px;
-    padding-right: 100px;
+    padding-top: 60px;
+    padding-right: 60px;
+}
 }
 
 /* COMMENT BOX*/
@@ -439,7 +447,6 @@ small.text-muted a {color: #60545a !important;
     top: 0px;
 }
 div#commentBox {
-    background: #ffffff !important;
     height: 35px;
     overflow-y: hidden !important;
     transition: 1s;
