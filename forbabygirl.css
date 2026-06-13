@@ -1,0 +1,779 @@
+
+/* FONT (From Google Fonts) */
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url(https://fonts.googleapis.com/css2?family=Glass+Antiqua&display=swap);
+
+/* MOBILE BACKGROUND */
+
+@media screen and (max-width: 600px){
+body {
+	background: #83878a;
+	background-size: cover;
+	font-family: 'Quicksand', sans-serif;
+	color: #36393c;}
+}
+
+/* BACKGROUND */
+
+@media screen and (min-width: 601px){
+body {
+	background: url('https://i.ibb.co/nMvtC6kn/upscalemedia-transformed-7.png') center center fixed;
+	background-size: 100%;
+	font-family: 'Quicksand', sans-serif;
+	color: #36393c;}
+}
+
+/* MAIN PANEL */
+
+/* RIGHT SIDE */
+.container.main {
+	background: linear-gradient(90deg, rgba(103,107,110,0.95) 0%, rgba(132, 136, 139,.9) 20%, rgba(132, 136, 139,.9) 80%, rgba(103,107,110,.95) 100%);;
+	border: 1px solid #474b4f;
+	box-shadow: 0 0 45px #2f2e2f;
+	border-radius: 3px;
+}
+
+/* LEFT SIDE */
+.col-md-9 {
+	background: none;
+        border-right: none;
+}
+
+
+/* TOPBAR ("Welcome back, ___"), NAVBAR (Den/Crossroads/Etc.) */
+
+.topbar {
+	background: linear-gradient(90deg, #766c72 0%, #818880 80%);
+	border: 1px solid #544c51;
+	border-top: none;
+	color: #d9d2d7;
+	border-radius: 10px;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.navbar {
+	background: linear-gradient(270deg, #766c72 0%, #818880 85%);
+	border-bottom: 1px solid #240431;
+	font-family: 'Quicksand', sans-serif;
+	color: #d9d2d7;
+	border-radius: 3px;
+}
+
+.navbar li a {
+	color: #d9d2d7 !important;
+}
+
+/* NAVBAR HOVER COLOR */
+
+.navbar li a:hover {
+	background: linear-gradient(90deg, #766c72 0%, #818880 85%) !important;
+}
+
+
+/* BREADCRUMB (Home / Den) */
+
+.breadcrumb {
+	background: #7c7b79;
+        border: 1px solid #4f4e4b;
+	border-radius: 10px;
+    box-shadow: 0 0 25px #444441;
+}
+
+.breadcrumb .active {
+	color: #444441;
+}
+
+
+/* CSS CREDIT */
+
+.breadcrumb::after {
+        content: "▸ 𝘱𝘰𝘪𝘴𝘰𝘯 𝘰𝘯 𝘵𝘩𝘦 𝘪𝘯𝘴𝘪𝘥𝘦, 𝘐 𝘤𝘰𝘶𝘭𝘥 𝘣𝘦 𝘺𝘰𝘶𝘳 𝘢𝘯𝘵𝘪𝘥𝘰𝘵𝘦 𝘵𝘰𝘯𝘪𝘨𝘩𝘵";
+        text-transform: italic;
+        color: #d9d2d7;    
+        position: absolute;
+        right: 13%;
+        z-index: 100;
+    }
+
+@media only screen and (max-width: 1199px) and (min-width: 992px)  {
+        .breadcrumb::after {
+            right: 20%;
+        }
+    }
+
+    @media only screen and (max-width: 991px) and (min-width: 768px)  {
+        .breadcrumb::after {
+            right: 20%;
+        }
+    }
+
+    @media only screen and (max-width: 767px) {
+        .breadcrumb::after {
+            right: 22%;
+        }
+    }
+
+/* BIGGEST HEADER ("___"'s DEN) */
+
+h1 {
+    font-size: 88px;
+    background: -webkit-linear-gradient(270deg, #d7e0d8 0%, #a7b1a9 60%, #6c756d 100%);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+    font-family: "Glass Antiqua", serif;
+        text-transform: uppercase;
+	text-align: center;
+        text-shadow: 0px 0px 20px rgba(101,96,102,0.85) !important;
+        text-decoration: none;
+
+}
+
+
+/* MEDIUM HEADER */
+
+h2 {
+	color: #6c756d;
+    font-family: "Glass Antiqua", serif;
+	font-size: 24px;
+	text-align: center;
+}
+
+
+/* SMALL HEADER */
+
+h3 {
+	color: #6c756d !important;
+    font-family: "Glass Antiqua", serif;
+    text-transform: uppercase;
+	font-size: 20px !important
+}
+
+/* RIGHT SIDE PANEL HEADER */
+
+.sidebar h3 {
+    background: -webkit-linear-gradient(270deg, #d7e0d8 0%, #a7b1a9 60%, #6c756d 100%);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+    font-size: 28px !important;
+	text-align: left;
+        text-shadow: 0px 0px 25px rgba(101,96,102,0.85) !important;
+        text-decoration: none;
+    
+}
+
+/* Sidebar Arrow Replacers */
+
+/* First Arrow (Top) */
+div.col-xs-6 > a > h3 > div {
+content:url('https://www.lioden.com/images/items/Amusement/lionskull.png');
+    position:absolute;
+    width:70px;
+	margin-right: 60px;	
+	right: -50px;
+	margin-top: -45px;
+	z-index:3
+}
+ 
+/* Second Arrow (Middle)*/
+ 
+div.col-xs-5> a:nth-child(1) > h3 > div {
+    content:url('https://www.lioden.com/images/items/Amusement/elephantskull.png');
+    position:absolute;
+    width:70px;
+	margin-right: 60px;	
+	right: -50px;
+    margin-top: -45px;
+	z-index:4
+}
+/* Third Arrow (Bottom) */
+div.col-xs-5> a:nth-child(3) > h3 > div {
+content:url('https://www.lioden.com/images/items/Amusement/skull_meerkat.png');
+    position:absolute;
+    width:70px;
+	margin-right: 60px;	
+	right: -50px;
+	margin-top: -35px;
+	z-index:5
+}
+
+/* ENERGY BARS, ACHIEVEMENTS, & BOOKMARKS */
+
+.panel {
+	background: linear-gradient(45deg, #7a7177 0%, #888186 50%, #948d92 100%) !important;
+	box-shadow: none !important;
+	border: 1px solid #4a4247 !important;
+	color: #d9d2d7 !important;
+	border-radius: 15px;
+}
+
+/* ENERGY BAR BACKGROUND */
+.progress {
+	background: #b2b2b2;
+	color: #414440 !important;
+	border-radius: 20px !important;
+}
+
+/* ENERGY BAR TEXT */
+.progress div {
+	color: #414440 !important;
+}
+
+
+/* ENERGY BAR COLOUR */
+.progress:nth-child(1) .progress-bar {
+    background: rgb(141,145,139);
+    color: #414440 !important;
+    border-radius: 5px !important
+}
+.progress:nth-child(2) .progress-bar {
+    background: rgba(141,145,139, .8);
+    color: #414440 !important;
+    border-radius: 5px !important
+}
+.progress:nth-child(3) .progress-bar {
+    background: rgba(141,145,139, .5);
+    color: #414440 !important;
+    border-radius: 5px !important
+}
+.progress:nth-child(4) .progress-bar {
+    background: rgba(141,145,139, .3);
+    color: #414440 !important;
+    border-radius: 5px !important
+}
+
+/* BOOKMARK BUTTON */
+
+input.floatright {
+    background: url(https://i.ibb.co/PzYRqBXW/bWVIFFc.gif) 0 0 no-repeat !important;
+    display:block;
+    height: 70px;
+    width: 70px;
+    overflow:visible;
+    text-indent:-99999em;
+    background-size: 70px 70px !important;
+    margin-top: -20px;
+    border: none !important;
+}
+
+/* ALERTS (ie. "Your lionesses have returned from hunting!") */
+
+.alert {
+	background: linear-gradient(270deg, #766d72 0%, #8a8f89 50%, #766d72 100%);
+	border: 1px solid #544c51;
+	color: #d9d2d7;
+	border-radius: 10px !important;
+}
+
+.alert-warning,
+.alert-danger {
+	background: linear-gradient(270deg, #766d72 0%, #8a8f89 50%, #766d72 100%);
+	color: #d9d2d7;
+	border-radius: 10px !important;
+}
+
+/* SWITCH ACCOUNT BUTTON */
+
+button.button, button.button:hover {
+	background: #878185;
+    color: #585155;
+	border: 1px solid #585155;
+	border-radius: 19px !important;
+        text-shadow: none !important;
+}
+
+/* FEED ALL, PLAY ALL */
+
+.feature {
+	background: #b2b2b2 !important;
+	color: #3d4244;
+	border: 1px solid #3d4244 !important;
+	border-radius: 10px;
+}
+
+/* "King Dynasty, Pride Dynasty, Achievements, Showcase" Panels */
+
+.feature,
+div.left {
+	background: #b2b2b2;
+	border: 1px solid #3d4244;
+	border-radius: 5px !important;
+}
+
+
+/* CHAT BOX SHOW */
+
+input#btnToggleSidebarChat {
+	background: #878185 !important;
+	border: 1px solid #4b4549 !important;
+	border-radius: 2px !important;
+        font-weight: normal !important;
+}
+
+
+/* LION INFO TABLE (Level, Stats, Branch, Territory Count, Etc.) */
+
+
+/* PANEL BACKGROUND COLOR */
+.table {
+	background: linear-gradient(270deg, #8d918e 0%, #c2c3c5 50%, #8d918e 100%);
+	border: 1px solid #4c474d !important;
+	border-collapse: separate;
+	border-radius: 3px;
+}
+
+
+/* HEADERS COLOR (King Name + Title, "There are _ lions with mutations in _'s pride.") */
+.top,
+.bottom,
+th {
+	background: linear-gradient(270deg, #786f74 0%, #898e88 50%, #786f74 100%)!important;
+	color: #d9d2d7 !important;
+	border-radius: 3px;
+}
+
+td.bottom a {
+        text-decoration: none !important;
+}
+
+/* Codes made by Pandora #144118 and Kat .:Red Lion of Voltron:. #94329 
+Codes may be edited, used in commissions or for personal use
+Please do not remove credit
+*/
+ 
+/* CUSTOM KING TITLE - AFTER */
+
+#about > tbody > tr:nth-child(1) > td > div::after {
+    content:', the Wretched Wanderer';
+    font-size:17px;
+    
+}
+
+/* Block of color where "Territory Description, Player Name, Avatar URL" etc. are */
+
+.table .left {
+	background: #898e88;
+    color: #444943 !important;
+}
+
+/* Affects the color behind your territory description, player name, etc. */
+
+input,
+select,
+textarea {
+	background: #a19ea2 !important;
+	border: none !important;
+	border-color: #656266;
+	border-radius: 5px;
+	box-shadow: none !important;
+	color: black !important;
+	text-shadow: none !important;
+}
+
+/* Color behind "Level, Stats, Branch, Territory" etc. */
+
+.inner-table .left {
+	background: #7d787e !important;
+	border-radius: 5px;
+    color: #ded9e0 !important;
+}
+
+
+/* Color behind the number of all of the things above */
+
+.inner-table .right {
+	background: #ded9e0;
+	border-radius: 5px !important;
+    color: #706a71 !important;
+}
+
+td.right {
+	border-radius: 3px !important;
+}
+
+/* IGNORE */
+.right_odd {
+	background: none !important;
+}
+
+
+/* ACCOUNT OPTIONS PANELS  (Friend Requests Toggles, etc.) */
+
+.item-header {
+	background: #7d787e !important;
+	color: #ded9e0  !important;
+	border-radius: 2px !important;
+}
+
+.item {
+	background: #bfbcc0 !important;
+	border: 1px solid #544f55 !important;
+	border-radius: 2px !important;
+}
+
+/* ACCOUNT OPTIONS ON/OFF TOGGLE SWITCH */
+
+div.slider.round {
+	background: #544f55 !important;
+}
+
+/* Copyright, Terms of Service, CoC, etc. */
+
+div.container.footer.center.white.visible-lg.visible-md.visible-sm, div.container.footer.center.white.visible-lg.visible-md.visible-sm a {
+        color: #332f33 !important;
+        text-shadow: none !important;
+}
+
+/* LINKS & LINK HOVER COLOR */
+
+a:link,
+a:visited {
+	color: #41413e !important;
+}
+
+.top a, .bottom a, .th a {
+        color: #41413e !important;
+}
+
+.cave-grid a, .mound-grid a {
+        color: #41413e !important;
+}
+
+a:hover {
+	color: #b7b7b3 !important;
+}
+
+
+/* BOX CONTAINER */
+
+    @media only screen and (max-width: 767px) {
+        .container.main .hidden-xs {
+            display: block !important;
+        }
+    }
+
+.boxcontainer {
+	background: none;
+	height: auto;
+	padding: 0px;
+	justify-content: center;
+	display: flex;
+}
+
+
+/* BOXES (Copy paste to add more or less) */
+
+
+
+.Box1 {
+	float: left;
+	background: #d3d7d5;
+	color: #36393c;
+	padding: 10px;
+	border: 1px solid #36393c;
+	border-radius: 5px;
+	margin: 10px;
+	float: right;
+	overflow: auto;
+	height: auto;
+	width: 250px;
+	max-height: 320px
+	margin-bottom: 15px;
+}
+
+.Box2 {
+	float: left;
+	background: #d3d7d5;
+	color: #36393c;
+	padding: 10px;
+	border: 1px solid #36393c;
+	border-radius: 10px;
+	margin: 10px;
+	height: auto;
+	width: 385px;
+	overflow: auto;
+	max-height: 320px
+}
+
+.Box3 {
+	float: left;
+	background: #d3d7d5;
+	color: #36393c;
+	padding: 10px;
+	border: 1px solid #36393c;
+	border-radius: 10px;
+	margin: 10px;
+	height: auto;
+	width: 790px;
+	overflow: auto;
+	max-height: 320px
+}
+
+
+/* SCROLL BAR BACKGROUND */
+
+::-webkit-scrollbar-track {
+	background: #818880;
+}
+
+
+/* SCROLL BAR "THUMB" */
+
+::-webkit-scrollbar-thumb {
+	background: #766d72;
+	border-radius: 0px;
+}
+
+
+/* LION AND USER AVATAR OPACITY */
+
+div#lion_image {
+	opacity: 1;
+}
+
+table#player img {
+	opacity: 1;
+}
+
+
+/* CIRCULAR LION AND USER AVATAR */
+
+div#lion_image {
+    content: url('https://i.ibb.co/J9D0SGm/image.png') !important;
+    height: 210px;
+	overflow: hidden;
+	margin-top: 8px;
+	margin-left: 10px;
+}
+
+table#player img {
+	border-radius: 0% !important;
+	overflow: hidden;
+}
+
+
+/* LIODEN LOGO REPLACER */
+
+div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
+	content: url('https://i.imgur.com/1ud2GbP.png');
+    margin-top: -10px; margin-left: 0px; 
+    
+}
+
+/* KING DYNASTY */
+img[src$="den_ancestors.png"] {
+    content:url('https://www.lioden.com/images/items/Amusement/hornbillskull.png')!important;
+    width:75px!important; 
+    height:75px !important;
+    background:none!important;
+
+ 
+}
+ 
+/* PRIDE DYNASTY */
+img[src$="ancestorsfem.png"] {
+    content:url('https://www.lioden.com/images/items/Amusement/cowskull.png')!important;
+    width:75px!important; 
+    height:75px !important;
+    background:none!important;
+ 
+}
+ 
+/* ACHIEVMENTS */
+img[src$="den_achievements.png"] {
+    content:url('https://www.lioden.com/images/items/Amusement/elephantskull.png')!important;
+    width:75px!important; 
+    height:75px !important;
+    background:none!important;
+ 
+ 
+}
+ 
+/* SHOWCASE */
+img[src$="den_showcase.png"] {
+    content:url('https://www.lioden.com/images/items/Amusement/cheetahskull.png')!important;
+    width:75px!important; 
+    height:75px !important;
+    background:none!important;
+ 
+}
+ 
+ 
+/* BEETLE BOOK */
+ 
+img[src$="den_beetlebook.png"] {
+    content:url('https://www.lioden.com/images/items/Amusement/awdskull.png')!important;
+    width:75px!important; 
+    height:75px !important;
+    background:none!important;
+}
+ 
+/* MAKE DYNASTY/ACHIEVEMENT/ETC. ONE ROW */
+div.col-md-3.col-sm-6.col-xs-6.mb-2.dynastylist {
+width: 20%;}
+
+/* Affects the color behind "_ Unsorted", "_ Pregnant Lionesses", etc. and cave/mound names */
+
+.cave-grid,
+.mound-grid {
+	background: linear-gradient(270deg, #7a7477 0%, #888d87 50%, #7a7477 100%)!important;
+	border: 1px solid #434144 !important;
+        color: #ded9e0 !important;
+	border-radius: 5px !important;
+    box-shadow: 0 0 20px #666264;
+}
+
+/* CAVES (Copy paste to add more) */
+
+a[href$="245168"]>div.cave-grid>img {
+	content: url('https://i.ibb.co/hxfp9Xqd/scream.png')!important;
+ 	height:140px;
+   	object-fit: cover;
+   	object-position: 0% 0;
+   	min-width: 0 !important;
+   	width: 100% !important;
+}
+
+a[href$="340269"]>div.cave-grid>img {
+	content: url('https://i.ibb.co/LXGKpVv4/stab.png')!important;
+ 	height:140px;
+   	object-fit: cover;
+   	object-position: 0% 0;
+   	min-width: 0 !important;
+   	width: 100% !important;
+}
+
+a[href$="252859"]>div.cave-grid>img {
+	content: url('https://i.ibb.co/nqBxWPhP/snek.png')!important;
+ 	height:140px;
+   	object-fit: cover;
+   	object-position: 0% 0;
+   	min-width: 0 !important;
+   	width: 100% !important;
+}
+
+a[href$="257888"]>div.cave-grid>img {
+	content: url('https://i.ibb.co/VckFfXwn/run.png')!important;
+ 	height:140px;
+   	object-fit: cover;
+   	object-position: 0% 0;
+   	min-width: 0 !important;
+   	width: 100% !important;
+}
+
+a[href$="lionoverview.php?id=309066"]>div.cave-grid>img {
+    content: url('https://i.imgur.com/lHbe5sD.png')!important;
+}
+
+a[href$="unsorted.php?id=309066"]>div.cave-grid>img {
+    content: url('https://i.imgur.com/eZpfGm8.png')!important;
+}
+
+div.cave-grid>img {
+        content: url('https://i.imgur.com/T0XoBQU.png')!important;
+    
+}
+
+/* MOUNDS */
+.mound-grid img {
+background: url("https://www.lioden.com/images/items/Amusement/awdskull.png");
+    width: 0;
+    height: 0;
+    padding-top: 80px;
+    padding-right: 100px;
+
+}
+
+#commentBox::before {
+content: "Dare to leave a message for the wretched wanderer?";
+background: linear-gradient(270deg, #786f74 0%, #878c86
+ 50%, #786f74 100%);
+color: #ded9e0;
+font-weight: 700;
+width: 100%;
+height: 40px;
+display: block;
+padding-top: 10px !important;}
+
+div#commentBox, div.comment {
+background: #aaacab !important;
+color: #2c3c34;
+    border: 1px solid rgba(78,59,81,0.2);
+
+}
+/*Date posted color*/
+small.text-muted {color: #516058;}
+small.text-muted a {color: #516058 !important;}
+
+div#commentBox {
+background: #aaacab !important;
+height: 35px;
+overflow-y: hidden !important;
+    transition: 1s;
+}
+#commentBox:hover {
+    height: 225px !important;
+overflow-y: scroll !important;
+        transition: 1s;
+}
+
+
+/*-------------------------*/
+/*Beetles*/
+/*-------------------------*/
+img[src$="icon-beetle-gold.png"] {
+content: url("https://i.imgur.com/ilWVfIT.png") !important;
+width: 20px !important;
+}
+
+img[src$="icon-beetle-silver.png"] {
+content: url("https://i.imgur.com/PlrsRpP.png") !important;
+width: 20px !important;
+}
+
+img[src$="default.png"] {
+content: url("https://static.lioden.com/images/dynamic/backgrounds/heavycloudsBG.png"); 
+}
+
+.pagedoll {
+    position: fixed;
+    height: 140px;
+    width: auto;
+    bottom: 0px;
+    left: 5px;
+    z-index: 99999;
+    transition: 0.5s;
+    text-align: center;
+}
+.pagedoll:hover {
+    height: 150px;
+}
+.pagedoll img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: auto;
+    transition: opacity 0s ease;
+}
+.img-default {
+    opacity: 1;
+}
+.img-hover {
+    opacity: 0;
+    pointer-events: none;
+}
+.pagedoll:hover .img-default {
+    opacity: 0;
+}
+.pagedoll:hover .img-hover {
+    opacity: 1;
+}
+
+
+
+
+    
+
+    
+
