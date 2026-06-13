@@ -1,0 +1,506 @@
+/* FONT (From Google Fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+:root {
+  --main-font: "Aboreto", system-ui;
+}
+
+/* BACKGROUND */
+body {
+	background: url('https://i.ibb.co/RpsGmHRp/daniele-colucci-5d-Cix-J6-FI-unsplash.jpg') center center fixed;
+	background-size: 100%;
+	font-family: 'Quicksand', sans-serif;
+	color: var(--font-color); 
+}
+
+/* MAIN PANEL */
+@media only screen and (max-width: 767px) {.container.main .hidden-xs {display: block !important;}}
+@media only screen and (max-width: 991px) and (min-width: 768px) {display: block !important;}
+@media only screen and (min-width: 1200px) {div.quote {width: 790px;}}
+.container.main {
+	background: linear-gradient(90deg, rgba(30, 20, 18,0.9) 0%, rgba(51,37,34,0.85) 20%, rgba(51,37,34,0.85) 80%, rgba(30, 20, 18,0.9) 100%);
+	border: 1px solid #db8b71;
+	box-shadow: 0 0 75px #db8b71;
+	border-radius: 3px;
+}
+.col-md-9 {
+	background: none;
+    border-right: none;
+}
+
+/* TOPBAR, NAVBAR */
+:root {
+  --primary-color: #b7573c;
+  --secondary-color: #FCBC7E;
+  --middle-color: #C06645;
+  --flat-color: #DD8F60;
+  --font-color: #ffe3c7;
+  --border-color: #FCBC7E;
+}
+:root {
+  --overlay-image: url('https://i.ibb.co/5gGj1NmD/dusty.png');
+}
+.topbar,.navbar,.panel {
+    color: var(--font-color); 
+    font-family: 'Quicksand', sans-serif;
+}
+.topbar {
+	background: var(--overlay-image) repeat center center, linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 80%);
+	border: 1px solid var(--border-color);
+	border-top: none;
+	border-radius: 10px;
+}
+.navbar {
+	background: var(--overlay-image) repeat center center, linear-gradient(270deg, var(--primary-color) 0%, var(--secondary-color) 80%);
+	border-bottom: 1px solid var(--border-color);
+	border-radius: 3px;
+}
+.navbar li a {
+	color: #f7e4d2 !important;
+    text-shadow: 0px 0px 3px #955b24 !important;
+    transition: 0.2s;
+}
+.navbar li a:hover {
+    background: none !important;
+    transform: scale(1.15);
+}
+
+/* SIDE PANEL */
+.panel {
+	background: var(--overlay-image) repeat center center, linear-gradient(45deg, var(--middle-color) 0%, var(--flat-color) 50%, var(--secondary-color) 100%) !important;
+	box-shadow: none !important;
+	border: 1px solid var(--border-color) !important;
+	border-radius: 15px;
+	filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.99)) !important;
+}
+.panel-body {
+    color: var(--font-color) !important; 
+}
+.progress {
+	background: #7a5249; /*energy bar background*/
+	border-radius: 20px !important;
+    
+}
+.progress div {
+	color: #1d0903 !important;
+}
+.progress:nth-child(1) .progress-bar {
+    background: rgba(207, 118, 89,1);
+    border-radius: 5px !important
+}
+.progress:nth-child(2) .progress-bar {
+    background: rgba(207, 118, 89, .8);
+    border-radius: 5px !important
+}
+.progress:nth-child(3) .progress-bar {
+    background: rgba(207, 118, 89, .5);
+    border-radius: 5px !important
+}
+.progress:nth-child(4) .progress-bar {
+    background: rgba(207, 118, 89, .3);
+    border-radius: 5px !important
+}
+
+/* BREADCRUMB, BOOKMARK */
+.breadcrumb {
+	background: #CF7659;
+    border: 1px solid var(--border-color);
+	border-radius: 10px;
+	filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.7)) !important;
+}
+.breadcrumb .active {
+	color: #f7d7bf;
+}
+.breadcrumb::after {
+    content: "ᨒ ོ ☼ css by coolio";
+    color: var(--font-color);   
+    position: absolute;
+    right: 13%;
+    z-index: 100;
+}
+input.floatright { /*bookmark*/
+	background: #D17D55 !important;
+	border: none !important;
+	color: #5e2910 !important;
+	border-radius: 15px !important;
+    font-weight: normal !important;
+	filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.5)) !important;
+}
+@media only screen and (max-width: 1199px) and (min-width: 992px)  {
+        .breadcrumb::after {
+            right: 20%;
+        }
+    }
+
+    @media only screen and (max-width: 991px) and (min-width: 768px)  {
+        .breadcrumb::after {
+            right: 20%;
+        }
+    }
+
+    @media only screen and (max-width: 767px) {
+        .breadcrumb::after {
+            right: 22%;
+        }
+    }
+
+/* HEADERS */
+h1 {
+    font-size: 60px;
+    background: -webkit-linear-gradient(270deg, #8c3b21 0%, #B05639 60%, #c37052 100%);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px rgba(208,148,127,0.4);
+    font-family: var(--main-font);
+    text-transform: uppercase;
+	text-align: center;
+    text-decoration: none;
+	filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.8)) !important;
+}
+h2 {
+	color: #8c3b21;
+    font-family: var(--main-font);
+	font-size: 24px;
+	text-align: center;
+}
+h3 {
+	color: #8c3b21 !important;
+    font-family: var(--main-font);
+	font-size: 20px !important
+}
+.sidebar h3 {
+    background: -webkit-linear-gradient(270deg, #8c3b21 0%, #B05639 60%, #c37052 100%);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     -webkit-text-stroke: 0.4px rgba(208,148,127,0.4,0.5);
+    font-size: 20px !important;
+	text-align: left;
+    text-decoration: none; 
+	filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.8)) !important;
+}
+
+/* ALERTS */
+.alert {
+	background: linear-gradient(270deg, var(--middle-color) 0%, var(--secondary-color) 50%, var(--middle-color) 100%);
+	border: 1px solid var(--border-color);
+	color: var(--font-color);
+	border-radius: 10px !important;
+}
+.alert-warning,.alert-danger {
+	background: linear-gradient(270deg, var(--middle-color) 0%, var(--secondary-color) 50%, var(--middle-color) 100%);
+	color: var(--font-color);
+	border-radius: 10px !important;
+}
+
+/* BUTTONS, FAPA */
+button.button, button.button:hover,.btn-default {
+	background: var(--flat-color) !important;
+    color: var(--font-color) !important;
+	border: 1px solid var(--border-color) !important;
+	border-radius: 19px !important;
+    text-shadow: none !important;
+	filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.99)) !important;
+}
+.feature { 
+	background: var(--flat-color) !important;
+	color: var(--font-color);
+	border: 1px solid var(--border-color)!important;
+	border-radius: 10px;
+    filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.99)) !important;
+}
+.feature,
+div.left {
+	background: var(--flat-color);
+	border: 1px solid var(--border-color);
+	border-radius: 5px !important;
+}
+input#btnToggleSidebarChat {
+	background: var(--flat-color) !important;
+	border: 1px solid var(--border-color) !important;
+	border-radius: 2px !important;
+    font-weight: normal !important;
+}
+
+/* PANEL BACKGROUND COLOR */
+.table {
+	background: linear-gradient(180deg, #442c27 0%, #5c4540 50%, #735650 100%);
+	border: 1px solid #000000 !important;
+	border-collapse: separate;
+	border-radius: 3px;
+	filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.99)) !important;
+}
+hr {
+    visibility: hidden;
+}
+
+/* HEADERS COLOR */
+.top,.bottom,th {
+	background: var(--overlay-image) repeat center center, linear-gradient(270deg, var(--middle-color) 0%, var(--secondary-color) 50%, var(--middle-color) 100%)!important;
+	color: var(--font-color) !important;
+	border-radius: 3px;
+ 	border-bottom: 1px solid var(--border-color) !important;
+}
+td.bottom a {
+    text-decoration: none !important;
+}
+
+/* EDIT DETAILS BOX */
+.table .left {
+	background: #C16846;
+    color: #f7d9cd !important;
+}
+input,select,textarea { 
+	background: #f7d9cd !important;
+	border: none !important;
+	border-radius: 5px;
+	box-shadow: none !important;
+	color: black !important;
+	text-shadow: none !important;
+}
+
+/* MAIN PANELS */
+.inner-table .left { /*level, stats, etc.*/
+	background: #7A5249 !important; 
+	border-radius: 5px;
+    color: #d78b73 !important;
+}
+.inner-table .right { /*where the numbers and stuff go*/
+	background: #CF7659;
+	border-radius: 5px !important;
+    color: #512f28 !important;
+	filter: drop-shadow(2px 2px 2px rgba(0, 0, 0 ,0.7)) !important;
+}
+td.right {
+	border-radius: 3px !important;
+}
+.right_odd {
+	background: none !important;
+}
+#clans .left, #allies .left {
+    visibility: hidden;
+}
+.bigger img {
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.5));
+}
+/* LINKS & LINK HOVER COLOR */
+a:link,a:visited {
+	color: #1a0801 !important;
+}
+.top a, .bottom a, .th a {
+    color: #6b2b14 !important;
+}
+.cave-grid a, .mound-grid a {
+    color: #6b2b14 !important;
+}
+a:hover {
+	color: #fde8d6 !important;
+}
+
+/* BOX CONTAINER */
+
+    @media only screen and (max-width: 767px) {
+        .container.main .hidden-xs {
+            display: block !important;
+        }
+    }
+
+.boxcontainer {
+	background: none;
+	height: auto;
+	padding: 0px;
+	justify-content: center;
+	display: flex;
+}
+
+/* BOXES */
+.Box1 {
+	float: left;
+	background: linear-gradient(180deg, #c66e52 0%, #e68667 50%, #e8aa7f 100%);
+    color: #9e492e;
+	padding: 10px;
+	border: 1px solid #e8aa7f;
+	border-radius: 5px;
+	margin: 10px;
+	overflow: auto;
+	height: auto;
+	max-height: 250px;
+	width: 250px;
+	margin-bottom: 15px;
+}
+.Box2 {
+	float: left;
+	background: linear-gradient(180deg, #c66e52 0%, #e68667 50%, #e8aa7f 100%);
+	color: #9e492e;
+	padding: 10px;
+	border: 1px solid #e8aa7f;
+	border-radius: 10px;
+	margin: 10px;
+	height: auto;
+	max-height: 250px;
+	width: 385px;
+	overflow: auto;
+}
+.Box3 {
+	float: left;
+	background: linear-gradient(180deg, #c66e52 0%, #e68667 50%, #e8aa7f 100%);
+	color: #9e492e;
+	padding: 10px;
+	border: 1px solid #e8aa7f;
+	border-radius: 10px;
+	margin: 10px;
+	height: auto;
+	max-height: 300px;
+	width: 790px;
+	overflow: auto;
+}
+
+
+/* SCROLL BAR */
+::-webkit-scrollbar {
+	width: 12px;
+	height: 7px;
+}
+::-webkit-scrollbar-track {
+	background: var(--primary-color);
+}
+::-webkit-scrollbar-thumb {
+	background: var(--secondary-color);
+	border-radius: 10px;
+}
+
+/* CIRCULAR LION AND USER AVATAR */
+div#lion_image {
+	border-radius: 20% !important;
+	overflow: hidden;
+	margin-top: 15px;
+	margin-left: 10px;
+    border: 1px solid var(--border-color);
+}
+table#player img {
+	border-radius: 0% !important;
+	overflow: hidden;
+}
+
+/* Affects the color behind "_ Unsorted", "_ Pregnant Lionesses", etc. and cave/mound names */
+.cave-grid,.mound-grid {
+	background: linear-gradient(180deg, var(--flat-color) 0%, var(--secondary-color) 100%) !important;
+	border: 1px solid var(--border-color) !important;
+    color: var(--font-color) !important;
+	border-radius: 5px !important;
+    filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.7));
+}
+
+/* CAVES AND MOUNDS */
+img[src$="//static.lioden.com/images/layout/unsortedlionsbanner.png"] {
+    content: url('https://i.ibb.co/tpCGBMkT/image.png') !important;
+    height:80px;
+    width: 80px; 
+}
+img[src$="//static.lioden.com/images/layout/nestingbanner.png"] {
+    content: url('https://i.ibb.co/k61mQZ6h/image.png') !important;
+    height:80px;
+    width: 80px;
+}
+img[src$="//static.lioden.com/images/layout/prideoverviewbanner.png"] {
+    content: url('https://i.ibb.co/ZRtH2ksn/image.png') !important;
+    height:80px;
+    width: 80px;
+}
+img[src$="//static.lioden.com/images/layout/cavedefault.jpg"] {
+    content: url('https://static.lioden.com/images/dynamic/backgrounds/thelastofgiants.png') !important;
+    height:100px;
+   	object-fit: cover;
+   	object-position: 0% 0;
+   	min-width: 0 !important;
+   	width: 100% !important;
+}
+.mound-grid img {
+    background: url("https://static.lioden.com/images/items/Amusement/bone_rib.png");
+    width: 0;
+    background-size: 60px !important; 
+    background-repeat: no-repeat;
+    background-size: cover;     
+    height: 0;
+    padding-top: 60px;
+    padding-right: 60px;
+}
+
+/* COMMENT BOX*/
+div#commentBox, div.comment {
+    background: #F7D9CD !important;
+    color: #5d250f;
+    border: 1px solid rgba(113, 105, 109,0.2);
+}
+small.text-muted {color: #73361e;}
+small.text-muted a {color: #945238 !important;
+}
+#commentBox::before { /*comment box header*/
+    content: "leave a comment here!";
+    background: linear-gradient(270deg, var(--middle-color) 0%, var(--secondary-color) 50%, var(--middle-color)100%);
+    font-weight: bold;
+    color: var(--font-color);
+    width: 100%;
+    height: 35px;
+    display: block;
+    padding-top:7px !important;
+    position: sticky!important;
+    top: 0px;
+}
+div#commentBox {
+    height: 35px;
+    overflow-y: hidden !important;
+    transition: 1s;
+}
+#commentBox:hover {
+    height: 225px !important;
+    overflow-y: scroll !important;
+    transition: 1s;
+}
+
+img[src$="default.png"] {
+    content: url("https://static.lioden.com/images/dynamic/backgrounds/thelastofgiants.png"); 
+}
+
+/* IMAGES */
+div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img { /*lioden logo*/ 
+	content: url('https://i.ibb.co/q3qCTYKv/image.png');
+    margin-top: -13px;
+}
+img[src$="icon-beetle-gold.png"] {
+    content: url("https://i.ibb.co/hxdXZ4FV/redbeebe.png") !important;
+    width: 20px !important;
+}
+img[src$="icon-beetle-silver.png"] {
+    content: url("https://i.ibb.co/sdLJvZsJ/yellowbeeble.png") !important;
+    width: 20px !important;
+}
+img[src$="den_ancestors.png"] {
+    content:url('https://static.lioden.com/images/items/Decoration/fatsandrat.png')!important;
+    width:75px!important; 
+    height:75px !important;
+    background:none!important;
+}
+img[src$="ancestorsfem.png"] {
+    content:url('https://static.lioden.com/images/items/Decoration/deertushcutecheetahcub.png')!important;
+    width:75px!important; 
+    height:75px !important;
+    background:none!important;
+}
+img[src$="den_achievements.png"] {
+    content:url('https://static.lioden.com/images/items/Decoration/deertushwolfcub1.png')!important;
+    width:75px!important; 
+    height:75px !important;
+    background:none!important;
+}
+img[src$="den_showcase.png"] {
+    content:url('https://static.lioden.com/images/items/Decoration/fennecfox_icon.png')!important;
+    width:75px!important; 
+    height:75px !important;
+    background:none!important;
+}
+img[src$="den_beetlebook.png"] {
+    content:url('https://static.lioden.com/images/items/Decoration/palefoxcub_icon.png')!important;
+    width:75px!important; 
+    height:75px !important;
+    background:none!important;
+}
