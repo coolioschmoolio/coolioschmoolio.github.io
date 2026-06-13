@@ -38,7 +38,7 @@ body {
   --border-color: #ff0000;
 }
 :root {
-  --overlay-image: url('https://i.imgur.com/gum6iLQ.png');
+  --overlay-image: url('URL');
 }
 .topbar,.navbar,.panel {
     color: var(--font-color); 
