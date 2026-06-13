@@ -359,10 +359,11 @@ a:hover {
     padding: 0px;
     border: none;
     border-radius: 0px;
-    margin-bottom: -10px;
+    margin-bottom: -128px;
     height: auto;
     width: 300px;
-    overflow: auto;
+	z-index: 1;
+	overflow: hidden;
 }
 
 /* SCROLL BAR */
