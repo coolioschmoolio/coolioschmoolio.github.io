@@ -71,7 +71,7 @@ body {
 	box-shadow: none !important;
 	border: 1px solid var(--border-color) !important;
 	border-radius: 15px;
-	filter: drop-shadow(5px 5px 5px rgba(0, 0, 0 ,0.7)) !important;
+	filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.7)) !important;
 }
 .panel-body {
     color: var(--font-color) !important; 
@@ -105,7 +105,7 @@ body {
 	background: #8f8f8f;
     border: 1px solid var(--border-color);
 	border-radius: 10px;
-	filter: drop-shadow(5px 5px 5px rgba(0, 0, 0 ,0.7)) !important;
+	filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.7)) !important;
 }
 .breadcrumb .active {
 	color: #8f8f8f;
@@ -123,7 +123,7 @@ input.floatright { /*bookmark*/
 	color: #000000 !important;
 	border-radius: 15px !important;
     font-weight: normal !important;
-	filter: drop-shadow(2px 2px 2px rgba(0, 0, 0 ,0.7)) !important;
+	filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.7)) !important;
 }
 @media only screen and (max-width: 1199px) and (min-width: 992px)  {
         .breadcrumb::after {
@@ -154,14 +154,14 @@ h1 {
     text-transform: uppercase;
 	text-align: center;
     text-decoration: none;
-	filter: drop-shadow(3px 3px 3px rgba(0, 0, 0 ,0.7)) !important;
+	filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.7)) !important;
 }
 h2 {
 	color: #8f8f8f;
     font-family: var(--main-font);
 	font-size: 24px;
 	text-align: center;
-	filter: drop-shadow(2px 2px 2px rgba(0, 0, 0 ,0.7)) !important;
+	filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.7)) !important;
 }
 h3 {
 	color: #8f8f8f !important;
@@ -176,7 +176,7 @@ h3 {
     font-size: 20px !important;
 	text-align: left;
     text-decoration: none; 
-	filter: drop-shadow(2px 2px 2px rgba(0, 0, 0 ,0.7)) !important;
+	filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.7)) !important;
 }
 
 /* ALERTS */
@@ -199,7 +199,7 @@ button.button, button.button:hover,.btn-default {
 	border: 1px solid var(--border-color) !important;
 	border-radius: 19px !important;
     text-shadow: none !important;
-	filter: drop-shadow(5px 5px 5px rgba(0, 0, 0 ,0.7)) !important;
+	filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.7)) !important;
 }
 .feature { 
 	background: var(--flat-color) !important;
@@ -226,7 +226,7 @@ input#btnToggleSidebarChat {
 	border: 1px solid #000000 !important;
 	border-collapse: separate;
 	border-radius: 3px;
-	filter: drop-shadow(5px 5px 5px rgba(0, 0, 0 ,0.7)) !important;
+	filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.7)) !important;
 }
 
 /* HEADERS COLOR */
@@ -264,7 +264,7 @@ input,select,textarea {
 	background: #ffffff;
 	border-radius: 5px !important;
     color: #000000 !important;
-	filter: drop-shadow(2px 2px 2px rgba(0, 0, 0 ,0.7)) !important;
+	filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.7)) !important;
 }
 td.right {
 	border-radius: 3px !important;
@@ -276,7 +276,7 @@ td.right {
     visibility: hidden;
 }
 .bigger img {
-    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0 ,0.7));
+    filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.7));
 }
 /* LINKS & LINK HOVER COLOR */
 a:link,a:visited {
@@ -382,7 +382,7 @@ table#player img {
 	border: 1px solid var(--border-color) !important;
     color: var(--font-color) !important;
 	border-radius: 5px !important;
-    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0 ,0.7));
+    filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.7));
 }
 
 /* CAVES AND MOUNDS */
