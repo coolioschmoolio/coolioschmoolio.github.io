@@ -447,6 +447,7 @@ small.text-muted a {color: #945238 !important;
     top: 0px;
 }
 div#commentBox {
+	background: #F7D9CD !important;
     height: 35px;
     overflow-y: hidden !important;
     transition: 1s;
