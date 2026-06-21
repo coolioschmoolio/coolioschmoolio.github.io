@@ -1,103 +1,138 @@
-
-
 /* FONT (From Google Fonts) */
-
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+:root {
+  --main-font: "Merienda", cursive;
+}
 
 /* BACKGROUND */
 body {
 	background: url('https://i.imgur.com/aHlweQl.jpeg') center center fixed;
 	background-size: 100%;
 	font-family: 'Quicksand', sans-serif;
-	color: #361f0d;}
+	color: var(--font-color); 
 }
 
 /* MAIN PANEL */
 @media only screen and (max-width: 767px) {.container.main .hidden-xs {display: block !important;}}
 @media only screen and (max-width: 991px) and (min-width: 768px) {display: block !important;}
 @media only screen and (min-width: 1200px) {div.quote {width: 790px;}}
-
-/* RIGHT SIDE */
 .container.main {
-	background: linear-gradient(90deg, rgba(51,28,11,0.85) 0%, rgba(88, 51, 22,0.8) 20%, rgba(88, 51, 22,0.8) 80%, rgba(51,28,11,.95) 100%);;
-	border: 1px solid #1e0f03;
-	box-shadow: 0 0 55px #1e0f03;
+	background: linear-gradient(90deg, rgba(39,20,7,0.9) 0%, rgba(88, 51, 22,0.85) 30%, rgba(88, 51, 22,0.85) 70%, rgba(39,20,7,.9) 100%);
+	border: 1px solid #000000;
 	border-radius: 3px;
 }
-
-/* LEFT SIDE */
 .col-md-9 {
 	background: none;
-        border-right: none;
+    border-right: none;
 }
 
-
-/* TOPBAR ("Welcome back, ___"), NAVBAR (Den/Crossroads/Etc.) */
-
+/* TOPBAR, NAVBAR */
+:root {
+  --primary-color: #a06d32 ;
+  --secondary-color: #dbb982 ;
+  --middle-color: #a06d32;
+  --flat-color: #CBA570;
+  --font-color: #ece4d5;
+  --border-color: #e6d0ad;
+}
+:root {
+  --overlay-image: url('https://i.imgur.com/gum6iLQ.png');
+}
+.topbar,.navbar,.panel {
+    color: var(--font-color); 
+    font-family: 'Quicksand', sans-serif;
+}
 .topbar {
-	background: url("https://i.imgur.com/gum6iLQ.png") repeat center center, linear-gradient(90deg, #a06d32 0%, #caa160 80%);
-	border: 1px solid #e6d0ad;
+	background: var(--overlay-image) repeat center center, linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 80%);
+	border: 1px solid var(--border-color);
 	border-top: none;
-	color: #e6d0ad;
 	border-radius: 10px;
-	font-family: 'Quicksand', sans-serif;
 }
-
 .navbar {
-	background: url("https://i.imgur.com/gum6iLQ.png") repeat center center, linear-gradient(270deg, #a06d32 0%, #caa160 85%);
-	border-bottom: 1px solid #e6d0ad;
-	font-family: 'Quicksand', sans-serif;
-	color: #e6d0ad;
+	background: var(--overlay-image) repeat center center, linear-gradient(270deg, var(--primary-color) 0%, var(--secondary-color) 80%);
+	border-bottom: 1px solid var(--border-color);
 	border-radius: 3px;
 }
-
 .navbar li a {
-	color: #e8d8bf !important;
+	color: #f7ecdb !important;
+    text-shadow: 0px 0px 3px #947c58 !important;
+    transition: 0.2s;
 }
-
-/* NAVBAR HOVER COLOR */
-
 .navbar li a:hover {
-	background: url("https://i.imgur.com/gum6iLQ.png") repeat center center, linear-gradient(90deg, #a06d32 0%, #caa160 85%) !important;
+    background: none !important;
+    transform: scale(1.15);
 }
 
+/* SIDE PANEL */
+.panel {
+	background: var(--overlay-image) repeat center center, linear-gradient(45deg, var(--middle-color) 0%, var(--flat-color) 50%, var(--secondary-color) 100%) !important;
+	box-shadow: none !important;
+	border: 1px solid var(--border-color) !important;
+	border-radius: 15px;
+	filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.7)) !important;
+}
+.panel-body {
+    color: var(--font-color) !important; 
+}
+.progress {
+	background: #926735; /*energy bar background*/
+	border-radius: 20px !important;
+}
+.progress div {
+	color: #4b3012  !important;
+}
+.progress:nth-child(1) .progress-bar {
+    background: linear-gradient(270deg, rgba(221,198,159,0.8) 0%, rgba(221,198,159,0.5) 50%, rgba(221,198,159,0.2) 100%);
+    border-radius: 5px !important
+}
+.progress:nth-child(2) .progress-bar {
+    background: linear-gradient(270deg, rgba(221,198,159,0.8) 0%, rgba(221,198,159,0.5) 50%, rgba(221,198,159,0.2) 100%);
+    border-radius: 5px !important
+}
+.progress:nth-child(3) .progress-bar {
+    background: linear-gradient(270deg, rgba(221,198,159,0.8) 0%, rgba(221,198,159,0.5) 50%, rgba(221,198,159,0.2) 100%);
+    border-radius: 5px !important
+}
+.progress:nth-child(4) .progress-bar {
+    background: linear-gradient(270deg, rgba(221,198,159,0.8) 0%, rgba(221,198,159,0.5) 50%, rgba(221,198,159,0.2) 100%);
+    border-radius: 5px !important
+}
 
-/* BREADCRUMB (Home / Den) */
-
+/* BREADCRUMB, BOOKMARK */
 .breadcrumb {
-	background: #b88c51;
-        border: 1px solid #715127;
+	background: #B88C51;
+    border: 1px solid var(--border-color);
 	border-radius: 10px;
-    box-shadow: 0 0 25px #382610;
+	filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.5)) !important;
 }
-
 .breadcrumb .active {
-	color: #715127;
+	color: #4d3311;
 }
-
-
-/* CSS CREDIT */
-
 .breadcrumb::after {
-        content: "༒︎ 𝘴𝘵𝘦𝘱𝘱𝘦𝘥 𝘰𝘶𝘵 𝘵𝘩𝘦 𝘴𝘸𝘢𝘮𝘱 𝘵𝘰 𝘵𝘩𝘦 𝘮𝘰𝘵𝘩𝘦𝘳𝘧𝘶𝘤𝘬𝘪𝘯' 𝘴𝘵𝘢𝘨𝘦";
-        text-transform: italic;
-        color: #e8d8bf;    
-        position: absolute;
-        right: 13%;
-        z-index: 100;
-    }
-
+    content: "𝒕𝒉𝒂𝒕'𝒔 𝒍𝒆𝒇𝒕, 𝒓𝒊𝒈𝒉𝒕, 𝒍е𝒇𝒕, 𝒓𝒊𝒈𝒉𝒕, 𝒍𝒆𝒇𝒕, 𝒓𝒊𝒈𝒉𝒕, 𝒈𝒐";
+    color: var(--font-color);   
+    position: absolute;
+    right: 13%;
+    z-index: 100;
+}
 /*"Lion's Player" replacement content*/
 #player > tbody > tr:nth-child(1) > td > small{
 font-size: 0px
 }
 #player > tbody > tr:nth-child(1) > td > small::after {
-content: "𝘤𝘶𝘵 𝘮𝘺 𝘮𝘪𝘤' 𝘰𝘧𝘧 '𝘤𝘢𝘶𝘴𝘦 𝘐'𝘮 '𝘣𝘰𝘶𝘵 𝘵𝘰 𝘮𝘪𝘴𝘣𝘦𝘩𝘢𝘷𝘦 ༒︎";
+content: "𝒈𝒐𝒕 𝒂 𝑹𝒐𝒍𝒍𝒊𝒆 𝒇𝒐𝒓 𝒕𝒉𝒆 𝒃𝒓𝒖𝒏𝒄𝒉 𝒂𝒏𝒅 𝒂 𝑷𝒂𝒕е𝒌 𝒇𝒐𝒓 𝒕𝒉𝒆 𝒔𝒉𝒐𝒘";
 font-size: 13px !important;
-color: #e8d8bf !important;
+color: var(--font-color) !important;
 }
-
+input.floatright { /*bookmark*/
+	background: #A37740 !important;
+	border: none !important;
+	color: #ddd4c7 !important;
+	border-radius: 15px !important;
+    font-weight: normal !important;
+	filter: drop-shadow(2px 2px 2px rgba(62,34,5,0.5)) !important;
+}
 @media only screen and (max-width: 1199px) and (min-width: 992px)  {
         .breadcrumb::after {
             right: 20%;
@@ -116,322 +151,194 @@ color: #e8d8bf !important;
         }
     }
 
-/* BIGGEST HEADER ("___"'s DEN) */
-
+/* HEADERS */
 h1 {
 	font-size: 0px;
     text-align: center;
 }
-
 h1::before {
      content: "la boulangerie";
-    visibility: visible !important;
-    font-size: 64px;
-    background: -webkit-linear-gradient(270deg, #fdcd93 0%, #c28d4f 60%, #8d6330 100%);
+    font-size: 60px;
+    background: -webkit-linear-gradient(270deg, #ddb380 0%, #B1824B 60%, #64431b 100%);
      -webkit-background-clip: text;
      -webkit-text-fill-color: transparent;
-    font-family: "Merienda", cursive;
-        text-transform: uppercase;
+    -webkit-text-stroke: 1px rgba(219,187,148,0.5);
+    font-family: var(--main-font);
+    text-transform: uppercase;
 	text-align: center;
-        text-shadow: 0px 0px 30px rgba(32,20,4,0.5) !important;
-        text-decoration: none;
-
+    text-decoration: none;
+	filter: drop-shadow(3px 3px 3px rgba(28,15,2,0.9)) !important;
 }
-
-
-/* MEDIUM HEADER */
-
 h2 {
-	color: #8d6330;
-    font-family: "Merienda", cursive;
+	 background: -webkit-linear-gradient(270deg, #ddb380 0%, #B1824B 60%, #64431b  100%);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     -webkit-text-stroke: 0.4px rgba(219,187,148,0.5);
+    font-family: var(--main-font);
 	font-size: 24px;
 	text-align: center;
+	filter: drop-shadow(2px 2px 2px rgba(28,15,2,0.9)) !important;
 }
-
-
-/* SMALL HEADER */
-
 h3 {
-	color: #8d6330 !important;
-    font-family: "Merienda", cursive;
-	font-size: 12px !important
+	color: #64431b !important;
+    font-family: var(--main-font);
+	font-size: 20px !important
 }
-
-/* RIGHT SIDE PANEL HEADER */
-
 .sidebar h3 {
-    background: -webkit-linear-gradient(270deg, #fdcd93 0%, #c28d4f 60%, #8d6330 100%);
+    background: -webkit-linear-gradient(270deg, #ddb380 0%, #B1824B 60%, #64431b  100%);
      -webkit-background-clip: text;
      -webkit-text-fill-color: transparent;
-    font-size: 16px !important;
-     text-transform: uppercase;
+     -webkit-text-stroke: 0.4px rgba(219,187,148,0.5);
+    font-size: 20px !important;
 	text-align: left;
-        text-shadow: 0px 0px 25px rgba(32,20,4,0.5) !important;
-        text-decoration: none;
-    
+    text-decoration: none; 
+	filter: drop-shadow(2px 2px 2px rgba(28,15,2,0.9)) !important;
 }
 
-/* Sidebar Arrow Replacers */
-
-/* First Arrow (Top) */
-div.col-xs-6 > a > h3 > div {
-content:url('https://www.serebii.net/pokemonsleep/berries/sitrusberry.png');
-    position:absolute;
-    width:70px;
-	margin-right: 60px;	
-	right: -50px;
-	margin-top: -45px;
-	z-index:3
-}
- 
-/* Second Arrow (Middle)*/
- 
-div.col-xs-5> a:nth-child(1) > h3 > div {
-    content:url('https://www.serebii.net/pokemonsleep/berries/figyberry.png');
-    position:absolute;
-    width:70px;
-	margin-right: 60px;	
-	right: -50px;
-    margin-top: -45px;
-	z-index:4
-}
-/* Third Arrow (Bottom) */
-div.col-xs-5> a:nth-child(3) > h3 > div {
-content:url('https://www.serebii.net/pokemonsleep/berries/leppaberry.png');
-    position:absolute;
-    width:70px;
-	margin-right: 60px;	
-	right: -50px;
-	margin-top: -40px;
-	z-index:5
-}
-
-
-/* ENERGY BARS, ACHIEVEMENTS, & BOOKMARKS */
-
-.panel {
-	background: url("https://i.imgur.com/gum6iLQ.png") repeat center center, linear-gradient(45deg, #a6753d 0%, #b98c51 50%, #cca667 100%) !important;
-	box-shadow: none !important;
-	border: 1px solid #e6d0ad !important;
-	color: #f0e3cd !important;
-	border-radius: 15px;
-}
-
-/* ENERGY BAR BACKGROUND */
-.progress {
-	background: #926735;
-	color: #5c3d1a !important;
-	border-radius: 20px !important;
-}
-
-/* ENERGY BAR TEXT */
-.progress div {
-	color: #5c3d1a !important;
-}
-
-/* ENERGY BAR COLOUR */
-.progress:nth-child(1) .progress-bar {
-    background: rgb(221,198,159);
-    border-radius: 5px !important
-}
-.progress:nth-child(2) .progress-bar {
-    background: rgba(221,198,159, .8);
-    border-radius: 5px !important
-}
-.progress:nth-child(3) .progress-bar {
-    background: rgba(221,198,159, .5);
-    border-radius: 5px !important
-}
-.progress:nth-child(4) .progress-bar {
-    background: rgba(221,198,159, .3);
-    border-radius: 5px !important
-}
-
-/* BOOKMARK BUTTON */
-
-input.floatright {
-	background: #a37740 !important;
-	border: 1px solid #d3b794 !important;
-	color: #ddc6aa !important;
-	border-radius: 15px !important;
-        font-weight: normal !important;
-}
-
-/* ALERTS (ie. "Your lionesses have returned from hunting!") */
-
+/* ALERTS */
 .alert {
-	background: linear-gradient(270deg, #a6753d 0%, #cca667 50%, #a6753d 100%);
-	border: 1px solid #e6d0ad;
-	color: #f0e3cd;
+	background: linear-gradient(270deg, var(--middle-color) 0%, var(--secondary-color) 50%, var(--middle-color) 100%);
+	border: 1px solid var(--border-color);
+	color: var(--font-color);
+	border-radius: 10px !important;
+}
+.alert-warning,.alert-danger {
+	background: linear-gradient(270deg, var(--middle-color) 0%, var(--secondary-color) 50%, var(--middle-color) 100%);
+	color: var(--font-color);
 	border-radius: 10px !important;
 }
 
-.alert-warning,
-.alert-danger {
-	background: linear-gradient(270deg, #a6753d 0%, #cca667 50%, #a6753d 100%);
-	color: #f0e3cd;
-	border-radius: 10px !important;
-}
-
-/* SWITCH ACCOUNT BUTTON */
-
-button.button, button.button:hover {
-	background: #b78c55;
-    color: #f0e3cd;
-	border: 1px solid #e6d0ad;
+/* BUTTONS, FAPA */
+button.button, button.button:hover,.btn-default {
+	background: var(--flat-color) !important;
+    color: var(--font-color) !important;
+	border: 1px solid var(--border-color) !important;
 	border-radius: 19px !important;
-        text-shadow: none !important;
+    text-shadow: none !important;
+	filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.7)) !important;
 }
-
-/* FEED ALL, PLAY ALL */
-
-.feature {
-	background: #b78c55 !important;
-	color: #f0e3cd;
-	border: 1px solid #e6d0ad !important;
+.feature { 
+	background: var(--flat-color) !important;
+	color: var(--font-color);
+	border: 1px solid var(--border-color)!important;
 	border-radius: 10px;
+	filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.7)) !important;
 }
-
-/* "King Dynasty, Pride Dynasty, Achievements, Showcase" Panels */
-
 .feature,
 div.left {
-	background: #b78c55;
-	border: 1px solid #e6d0ad;
+	background: var(--flat-color);
+	border: 1px solid var(--border-color);
 	border-radius: 5px !important;
 }
-
-
-/* CHAT BOX SHOW */
-
 input#btnToggleSidebarChat {
-	background: #b78c55 !important;
-	border: 1px solid #e6d0ad !important;
+	background: var(--flat-color) !important;
+	border: 1px solid var(--border-color) !important;
 	border-radius: 2px !important;
-        font-weight: normal !important;
+    font-weight: normal !important;
 }
-
-
-/* LION INFO TABLE (Level, Stats, Branch, Territory Count, Etc.) */
-
 
 /* PANEL BACKGROUND COLOR */
 .table {
-	background: linear-gradient(270deg, #62442a 0%, #7a593e 50%, #62442a 100%);
-	border: 1px solid #402c1b !important;
+	background: linear-gradient(180deg, #49301c 0%, #62442c 50%, #79583D 100%);
+	border: 1px solid #1c0e02 !important;
 	border-collapse: separate;
 	border-radius: 3px;
+	filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.5)) !important;
+}
+hr {
+    visibility: hidden;
 }
 
-
-/* HEADERS COLOR (King Name + Title, "There are _ lions with mutations in _'s pride.") */
-.top,
-.bottom,
-th {
-	background: url("https://i.imgur.com/gum6iLQ.png") repeat center center, linear-gradient(270deg, #a6753d 0%, #cea666 50%, #a6753d 100%)!important;
-	color: #e6d0ad !important;
-     border-bottom: 1px solid #e6d0ad !important;
+/* HEADERS COLOR */
+.top,.bottom,th {
+	background: var(--overlay-image) repeat center center, linear-gradient(270deg, var(--middle-color) 0%, var(--secondary-color) 50%, var(--middle-color) 100%)!important;
+	color: var(--font-color) !important;
 	border-radius: 3px;
+ 	border-bottom: 1px solid var(--border-color) !important;
 }
-
 td.bottom a {
-        text-decoration: none !important;
+    text-decoration: none !important;
 }
 
-/* Block of color where "Territory Description, Player Name, Avatar URL" etc. are */
-
+/* EDIT DETAILS BOX */
 .table .left {
-	background: #553c26;
-    color: #cfb997 !important;
+	background: #49301c;
+    color: #b19971 !important;
 }
-
-/* Affects the color behind your territory description, player name, etc. */
-
-input,
-select,
-textarea {
-	background: #eae1d1 !important;
+input,select,textarea { 
+	background: #DDC69F !important;
 	border: none !important;
-	border-color: #000000;
 	border-radius: 5px;
 	box-shadow: none !important;
 	color: black !important;
 	text-shadow: none !important;
 }
 
-/* Color behind "Level, Stats, Branch, Territory" etc. */
-
-.inner-table .left {
-	background: #553c26 !important;
+/* MAIN PANELS */
+.inner-table .left { /*level, stats, etc.*/
+	background: linear-gradient(90deg, rgba(71,49,29,0.9) 0%, rgba(85, 60, 38,0.9) 50%, rgba(107,79,55,0.9) 100%); !important
 	border-radius: 5px;
-    color: #ddc59f !important;
+    color: #DDC69F !important;
 }
-
-
-/* Color behind the number of all of the things above */
-
-.inner-table .right {
-	background: #ddc59f;
+.inner-table .right { /*where the numbers and stuff go*/
+	background: #DDC69F;
 	border-radius: 5px !important;
-    color: #553c26 !important;
+    color: #4F3723 !important;
+	filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.7)) !important;
 }
-
 td.right {
 	border-radius: 3px !important;
 }
-
-/* IGNORE */
 .right_odd {
 	background: none !important;
 }
-
-
-/* ACCOUNT OPTIONS PANELS  (Friend Requests Toggles, etc.) */
-
-.item-header {
-	background: #553c26 !important;
-	color: #ddc4ad  !important;
-	border-radius: 2px !important;
+#clans .left, #allies .left {
+    visibility: hidden;
 }
-
-.item {
-	background: #c8af98 !important;
-	border: 1px solid #2b1d10 !important;
-	border-radius: 2px !important;
+#sparring {
+    height: 35px !important;
+    display: flex;
+    overflow-y: hidden !important;
+    transition: 1s;  
 }
-
-/* ACCOUNT OPTIONS ON/OFF TOGGLE SWITCH */
-
-div.slider.round {
-	background: #553c26 !important;
+.feature select {
+      position: relative;
+    top: -30px;
 }
-
-/* Copyright, Terms of Service, CoC, etc. */
-
-div.container.footer.center.white.visible-lg.visible-md.visible-sm, div.container.footer.center.white.visible-lg.visible-md.visible-sm a {
-        color: #553c26 !important;
-        text-shadow: none !important;
+.feature {
+    height: 80px;
 }
-
+.feature input{
+    position: relative;
+    top: -30px;
+}
+#sparring:hover {
+    height: 160px!important;
+    overflow-y: hidden !important;
+    transition: 1s;
+}
+center > b {
+    visibility: hidden;
+}
+.feature .xsmall {
+    display: none;
+}
+.bigger img {
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.5));
+}
 /* LINKS & LINK HOVER COLOR */
-
-a:link,
-a:visited {
-	color: #3c230e !important;
+a:link,a:visited {
+	color: #3c230e  !important;
 }
-
 .top a, .bottom a, .th a {
-        color: #885c34 !important;
+    color: #885c34  !important;
 }
-
 .cave-grid a, .mound-grid a {
-        color: #4d2f16 !important;
+    color: #885c34  !important;
 }
-
 a:hover {
-	color: #e4c8af !important;
+	color: #eed8c4  !important;
 }
-
 
 /* BOX CONTAINER */
 
@@ -449,172 +356,174 @@ a:hover {
 	display: flex;
 }
 
-/* BOXES (Copy paste to add more or less) */
-
-
-
-.Box1 {
-	float: left;
-	background: linear-gradient(180deg, #412914 0%, #5a3c22 50%, #694628 100%);
-	color: #cfb997;
-	padding: 10px;
-	border: 1px solid #9a886b;
-	border-radius: 5px;
-	margin: 10px;
-	overflow: auto;
-	height: auto;
-	max-height: 250px;
-	width: 250px;
-	margin-bottom: 15px;
-}
-
-.Box2 {
-	float: left;
-	background: linear-gradient(180deg, #412914 0%, #5a3c22 50%, #694628 100%);
-	color: #cfb997;
-	padding: 10px;
-	border: 1px solid #9a886b;
-	border-radius: 10px;
-	margin: 10px;
-	height: auto;
-	max-height: 250px;
-	width: 385px;
-	overflow: auto;
-}
-
-.Box3 {
-	float: left;
-	background: linear-gradient(180deg, #412914 0%, #5a3c22 50%, #694628 100%);
-	color: #cfb997;
-	padding: 10px;
-	border: 1px solid #9a886b;
-	border-radius: 10px;
-	margin-right: 120px;
-	height: 120px;
-	width: 70%;
-	overflow: auto;
-}
-
-.ArtHolder {
-	background: none;
-	color: none;
-	padding: 0px;
-	border: none;
-	margin: 0px;
-	width: 200px; 
-	position: relative;
-	bottom: 30px;
-	left: 40px;
-	z-index: 1;
-	overflow: hidden;
-	margin-left: -217px;
-    transition-duration: 0.3s;    
-}
-.ArtHolder:hover {
-    transform: rotate(7deg) scale(1.05);
-     transition-duration: 0.3s;
-}
-
-
 /* SCROLL BAR */
-
 ::-webkit-scrollbar {
 	width: 12px;
 	height: 7px;
 }
-
-
-/* SCROLL BAR BACKGROUND */
-
 ::-webkit-scrollbar-track {
-	background: #cca668;
+	background: var(--primary-color);
 }
-
-
-/* SCROLL BAR "THUMB" */
-
 ::-webkit-scrollbar-thumb {
-	background: #a6753d;
-	border-radius: 0px;
+	background: var(--secondary-color);
+	border-radius: 10px;
 }
-
-
-/* LION AND USER AVATAR OPACITY */
-
-div#lion_image {
-	opacity: 1;
-}
-
-table#player img {
-	opacity: 1;
-}
-
 
 /* CIRCULAR LION AND USER AVATAR */
-
 div#lion_image {
-	border-radius: 10% !important;
+	border-radius: 20% !important;
 	overflow: hidden;
 	margin-top: 15px;
 	margin-left: 10px;
-    box-shadow: 0 0 15px rgba(45,24,6,0.9);
-    transform: scalex(-1) !important;
+    border: 1px solid var(--border-color);
+}
+table#player img {
+	border-radius: 0% !important;
+	overflow: hidden;
 }
 
+/* CAVE CODE BY FELID #114852 */
+#fraOrganizationBlock {
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-template-rows: auto auto auto;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    position: relative;
+}
+#fraOrganizationBlock > div:nth-child(1) > a > div {
+    width: 150px;
+    height: 110px;
+    color: #b39e84;
+    padding: 10px;
+    margin: 10px;
+    background: linear-gradient(90deg, rgba(71,49,29,0.9) 0%, rgba(85, 60, 38,0.9) 50%, rgba(107,79,55,0.9) 100%); !important
+    margin-top: 0px !important; 
+    border: none;
+   filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.7)) !important;
+}
+#fraOrganizationBlock > div:nth-child(2) > div, #fraOrganizationBlock > div:nth-child(2) > a > div {
+    width: 150px;
+    height: 110px;
+        filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.7)) !important;
+    color: #b39e84;
+    padding: 9px;
+    margin: 10px;
+      border: none;
+    background: linear-gradient(90deg, rgba(71,49,29,0.9) 0%, rgba(85, 60, 38,0.9) 50%, rgba(107,79,55,0.9) 100%); !important
+}
+#fraOrganizationBlock > div:nth-child(3) > a > div {
+    width: 150px;
+    height: 110px;
+        filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.7)) !important;
+    color: #b39e84;
+    padding: 10px;
+    margin: 10px;
+      border: none;
+    background: linear-gradient(90deg, rgba(71,49,29,0.9) 0%, rgba(85, 60, 38,0.9) 50%, rgba(107,79,55,0.9) 100%); !important
+}
 
-/* KING DYNASTY */
-img[src$="den_ancestors.png"] {
-    content:url('https://archives.bulbagarden.net/media/upload/c/cd/Bag_Butter_SV_Sprite.png')!important;
-    width:75px!important; 
-    height:75px !important;
-    background:none!important;
- 
+/*KILL EXTRA UNSORTED BUTTON*/ #pride:nth-child(6) {
+    display: none;
 }
- 
-/* PRIDE DYNASTY */
-img[src$="ancestorsfem.png"] {
-    content:url('https://archives.bulbagarden.net/media/upload/thumb/e/ec/Curry_Ingredient_Bread_Sprite.png/300px-Curry_Ingredient_Bread_Sprite.png')!important;
-    width:75px!important; 
-    height:75px !important;
-    background:none!important;
- 
+.cave-grid {
+    transition: 0.2s;
 }
- 
-/* ACHIEVMENTS */
-img[src$="den_achievements.png"] {
-    content:url('https://archives.bulbagarden.net/media/upload/thumb/2/2c/Curry_Ingredient_Fruit_Bunch_Sprite.png/300px-Curry_Ingredient_Fruit_Bunch_Sprite.png')!important;
-    width:75px!important; 
-    height:75px !important;
-    background:none!important;
- 
- 
+.cave-grid:hover {
+    transform: scale(1.05);
 }
- 
-/* SHOWCASE */
-img[src$="den_showcase.png"] {
-    content:url('https://archives.bulbagarden.net/media/upload/e/e0/Bag_Peanut_Butter_SV_Sprite.png')!important;
-    width:75px!important; 
-    height:75px !important;
-    background:none!important;
- 
+#pride th {
+    background: linear-gradient(270deg, var(--middle-color) 0%, var(--flat-color) 50%, var(--secondary-color) 100%)!important;
+    width: 1000px;
+     border: 1px solid var(--border-color);
+    position: sticky;
+    top: 0px;
+    margin-top: 0px !important;
+    z-index: 999;
+    font-size: 15px;
+        filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.7)) !important;
 }
- 
-/* BEETLE BOOK */
- 
-img[src$="den_beetlebook.png"] {
-    content:url('https://archives.bulbagarden.net/media/upload/f/ff/Bag_Egg_SV_Sprite.png')!important;
-    width:75px!important; 
-    height:75px !important;
-    background:none!important;
+#fraCaveList > table {
+    height: 40px !important;
+    overflow: hidden !important;
+    transition: 0.2s; 
+    display: block;
+   border: none !important;
+        filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.55)) !important;
 }
- 
-/* MAKE DYNASTY/ACHIEVEMENT/ETC. ONE ROW */
-div.col-md-3.col-sm-6.col-xs-6.mb-2.dynastylist {
-width: 20%;}
+#pride:nth-child(7) {
+    display: none;
+}
+.mound-grid {
+    display: none;
+}
+#fraCaveList {
+    grid-area: 1 / 2 / 4 / 3;
+}
+img[src$="//static.lioden.com/images/layout/unsortedlionsbanner.png"] {
+    content: url('https://www.serebii.net/pokemonsleep/berries/sitrusberry.png') !important;
+    width: 50px;
+}
+img[src$="//static.lioden.com/images/layout/nestingbanner.png"] {
+    content: url('https://www.serebii.net/pokemonsleep/berries/figyberry.png') !important;
+    width: 50px;
+}
+img[src$="//static.lioden.com/images/layout/prideoverviewbanner.png"] {
+    content: url('https://www.serebii.net/pokemonsleep/berries/leppaberry.png') !important;
+    width: 50px;
+}
+@media only screen and (max-width: 767px) {
+        .container.main .hidden-xs {
+            display: block !important;
+        }
+}
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+	display: block !important;
+}
+@media only screen and (min-width: 1200px) {
+		div.quote {
+			width: 790px;
+		}
+	}
 
+/* COMMENT BOX*/
+div#commentBox, div.comment {
+    background: #DDC69F !important;
+    color: #362913;
+    border: 1px solid rgba(113,110,105,0.2);
+}
+small.text-muted {color: #4f3f23;}
+small.text-muted a {color: #756343 !important;
+}
+#commentBox::before { /*comment box header*/
+    content: "𝘤𝘢𝘳𝘦 𝘵𝘰 𝘱𝘭𝘢𝘤𝘦 𝘢𝘯 𝘰𝘳𝘥𝘦𝘳?";
+    background: linear-gradient(270deg, var(--middle-color) 0%, var(--secondary-color) 50%, var(--middle-color)100%);
+    font-weight: bold;
+    color: var(--font-color);
+    width: 100%;
+    height: 35px;
+    display: block;
+    padding-top:7px !important;
+    position: sticky!important;
+    top: 0px;
+}
+div#commentBox {
+    height: 35px;
+    overflow-y: hidden !important;
+    transition: 1s;
+}
+#commentBox:hover {
+    height: 225px !important;
+    overflow-y: scroll !important;
+    transition: 1s;
+}
 
-/* LIODEN LOGO REPLACER */
+.lionImage {
+content: url("https://i.imgur.com/YCfX4Hg.png") !important;
+ box-shadow: 0 0 15px #0d0601;
+}
 
+/* IMAGES */
 div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
 	content: url('https://i.imgur.com/NqM3bML.png');
     margin-top: -5px !important;
@@ -624,188 +533,199 @@ div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img:hover {
     transform: rotate(-7deg) scale(1.05);
      transition-duration: 0.2s;
 }
-
-/* Affects the color behind "_ Unsorted", "_ Pregnant Lionesses", etc. and cave/mound names */
-
-.cave-grid,
-.mound-grid {
-	background: url("https://i.imgur.com/gum6iLQ.png") repeat center center, linear-gradient(270deg, #a6753d 0%, #c49d5f 50%, #a6753d 100%)!important;
-	border: 1px solid #2d1604 !important;
-        color: #eeddc1 !important;
-	border-radius: 5px !important;
-    box-shadow: 0 0 20px #2d1604;
-}
-
-/* CAVES (Copy paste to add more) */
-
-a[href$="366868"]>div.cave-grid>img {
-	content: url('https://static.lioden.com/images/layout/treasure/treasuremap1.png')!important;
- 	height:100px;
-   	object-fit: cover;
-   	object-position: 0% 0;
-   	min-width: 0 !important;
-   	width: 100% !important;
-}
-
-a[href$="307664"]>div.cave-grid>img {
-	content: url('https://static.lioden.com/images/layout/treasure/treasuremap2.png')!important;
- 	height:100px;
-   	object-fit: cover;
-   	object-position: 0% 0;
-   	min-width: 0 !important;
-   	width: 100% !important;
-}
-
-a[href$="290345"]>div.cave-grid>img {
-	content: url('https://static.lioden.com/images/layout/treasure/treasuremap3.png')!important;
- 	height:100px;
-   	object-fit: cover;
-   	object-position: 0% 0;
-   	min-width: 0 !important;
-   	width: 100% !important;
-}
-
-a[href$="307666"]>div.cave-grid>img {
-	content: url('https://static.lioden.com/images/layout/treasure/treasuremap10.png')!important;
- 	height:100px;
-   	object-fit: cover;
-   	object-position: 0% 0;
-   	min-width: 0 !important;
-   	width: 100% !important;
-}
-
-a[href$="lionoverview.php?id=360862"]>div.cave-grid>img {
-    content: url('https://i.imgur.com/HR2K2lC.png')!important;
- height:60px;
-   	min-width: 0 !important;
-   	width: 100% !important;
-}
-
-a[href$="unsorted.php?id=360862"]>div.cave-grid>img {
-    content: url('https://i.imgur.com/02FUHcw.png')!important;
- height:60px;
-   	min-width: 0 !important;
-   	width: 100% !important;
-}
-
-div.cave-grid>img[src$="caveunused.jpg"]{
-    content:url('https://static.lioden.com/images/layout/treasure/treasuremap10.png') !important;
-    height:160px;
-    object-fit: cover;
-    object-position: 0% 0;
-    min-width: 0 !important;
-    width: 100% !important;
-}
-
-div.cave-grid>img {
-        content: url('https://i.imgur.com/ZymrtYR.png')!important;
- height:60px;
-   	min-width: 0 !important;
-   	width: 100% !important;
-    
-}
-
-/* MOUNDS */
-.mound-grid img {
-background: url("https://www.lioden.com/images/items/Other/coffeebeans.png");
-    width: 0;
-    height: 0;
-    padding-top: 100px;
-    padding-right: 100px;
-
-}
-
-div#commentBox, div.comment {
-background: #654425 !important;
-color: #cfb997;
-    border: 1px solid rgba(130,112,92,0.4);
-
-}
-/*Date posted color*/
-small.text-muted {color: #bea886;}
-small.text-muted a {color: #bea886 !important;}
-
-/*Roleplay Comments/ETC disclaimer*/
-#commentBox::before {
-content: "care to place an order?";
-background: linear-gradient(270deg, #a6753d 0%, #cca668 50%, #a6753d 100%);
-    font-weight: bold;
-    color: #e8d9c2;
-width: 100%;
-height: 35px;
-display: block;
-padding-top:7px !important;
-position: sticky!important;
-top: 0px;
-
-}
-div#commentBox {
-background: #654425 !important;
-height: 35px;
-overflow-y: hidden !important;
-    transition: 1s;
-}
-#commentBox:hover {
-    height: 225px !important;
-overflow-y: scroll !important;
-        transition: 1s;
-}
-
-/*-------------------------*/
-/*Beetles*/
-/*-------------------------*/
 img[src$="icon-beetle-gold.png"] {
-content: url("https://archives.bulbagarden.net/media/upload/thumb/f/f4/Pok%C3%A9Coin.png/30px-Pok%C3%A9Coin.png") !important;
+content: url("https://i.ibb.co/XxRpGc2V/image.png") !important;
 width: 20px !important;
 height: 20px !important;
 }
 
 img[src$="icon-beetle-silver.png"] {
-content: url("https://archives.bulbagarden.net/media/upload/thumb/f/f4/Pok%C3%A9Coin.png/30px-Pok%C3%A9Coin.png") !important;
+content: url("https://i.ibb.co/XxRpGc2V/image.png") !important;
 width: 20px !important;
     height: 20px !important;
 filter: grayscale(0.7);
 }
-
-
-table#player.table hr {
-    visibility: hidden !important;
-    display: none !important; 
+.dynastylist {
+    width: 20%;}
+img[src$="den_ancestors.png"] {
+    content:url('https://static.lioden.com/images/items/Decoration/impressadoreeducat.png')!important;
+    width:60px!important; 
+    height:60px !important;
+    background:none!important;
+}
+img[src$="ancestorsfem.png"] {
+    content:url('https://static.lioden.com/images/items/Decoration/excitedfan.png')!important;
+    width:60px!important; 
+    height:60px !important;
+    background:none!important;
+}
+img[src$="den_achievements.png"] {
+    content:url('https://static.lioden.com/images/items/Decoration/cheeringfan.png')!important;
+   width:60px!important; 
+    height:60px !important;
+    background:none!important;
+}
+img[src$="den_showcase.png"] {
+    content:url('https://static.lioden.com/images/items/Decoration/ambitiousyoungster.png')!important;
+   width:60px!important; 
+    height:60px !important;
+    background:none!important;
+}
+img[src$="den_beetlebook.png"] {
+    content:url('https://static.lioden.com/images/items/Decoration/cowardlionbrown.png')!important;
+   width:60px!important; 
+    height:60px !important;
+    background:none!important;
+}
+/* --- BOX CODE BY FELID #114852 ---*/
+/*BOX WRAPPER*/ .boxwrapper {
+    background: url('https://i.ibb.co/0VKvYsRk/hm.png') center center fixed;
+    font-size: 16px;
+    border-radius: 5px;
 }
 
-table#player.table div.xlarge { 
-    margin-top: 10px !important; 
+/*BOX HEADER*/ .boxcontainer1 {
+    color: #DDC69F !important;
+	background: linear-gradient(90deg, #2d1802 0%, #553a1e 50%, #2d1802 100%);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border: 1px solid #6b533c;
+    border-bottom: none;
+	justify-content: center;
+	display: flex;
 }
 
-.lionImage {
-content: url("https://i.imgur.com/YCfX4Hg.png") !important;
- box-shadow: 0 0 15px #0d0601;
+/*BOX HEADER CONTENT*/ .box1 {
+    color: #e6dac5 !important;
+	float: left;
+	background: transparent;
+	border: none;;
+	padding: 10px;
+	border-radius: 5px;
+	margin: 10px;
+	min-height: 50px;
+	width: 70%;
+	overflow: auto;
 }
 
-.center.b {
-    font-size: 0px
+/*BOX HEADER - H2 TEXT EDITS*/
+/*you can delete this if you dont want to use h2*/
+.boxcontainer1 h2 {
+    font-size: 20px !important; margin: 0px; 
 }
 
-.center.b:after {
-    content: "This lion has... absolutely no thoughts in his head";
-font-size: 15px !important;
-    color: #FF0001 !important;
-
+/*BOX MAIN/MIDDLE*/ .boxcontainer2 {
+    background: transparent;
+    display: grid;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0px;
+    grid-template-columns: 2fr 2fr;
+    grid-auto-rows: 50px;
+    justify-content: center;
+    column-gap: 10px;
 }
 
-.container.main::after {
-content: "";
-background-image: url('https://i.ibb.co/8nNK82r8/Coolio-bby.png');
-background-size: cover;
-position: fixed;
-display: block;
-height:300px;
-width:300px;
-right: -10px;
-bottom: -35px;
-z-index: 100;
-pointer-events:none;
-    filter: drop-shadow(5px 5px 3px rgba(0,0,0,0.7));
+/*BASE BREEDER BUTTON CONTAINMENT*/ .box2 {
+	background: none;
+	padding: 10px;
+	border-radius: 5px;
+	margin: 10px;
+	min-height: 50px;
+	width: 100%;
+	overflow: auto;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    z-index: 999;
 }
 
+/*LEFT BOX*/ .box3 {
+	background: linear-gradient(0deg, #331c04 0%, #553a1e 50%, #735434 100%);
+    color: #DDC69F;
+    border: none;
+	padding: 10px;
+	border-radius: 5px;
+	margin: 10px;
+	min-height: 50px;
+	width: 100%;
+	overflow: auto;
+    scrollbar-color: #fff #000;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
 
+/*RIGHT BOX*/ .box4 {
+	background: linear-gradient(0deg, #331c04 0%, #553a1e 50%, #735434 100%);
+    color: #DDC69F;
+    border: none;
+	padding: 10px;
+	border-radius: 5px;
+	margin: 10px;
+	min-height: 50px;
+	overflow: auto;
+    scrollbar-color: #C9AD95 #000;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    justify-content: center;
+}
+
+/*FOOTER*/ .buttoncontainer {
+    background: url('https://i.ibb.co/jkrdM2Xv/sada.png') center center fixed;
+    width: 100%;
+	padding-bottom: 15px;
+    padding-top: 5px;
+    overflow: auto;
+	display: flex;
+    justify-content: center;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom: 1px solid #9c7f64;
+}
+
+/*BUTTONS*/ .button1 a{
+    background: linear-gradient(0deg, #a0723c 0%, #B58750 60%, #CCA06B 100%);
+    color: #3E260E !important; 
+    font-size: 16px;
+    border-radius: 5px;
+    transition: 0.2s;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: block;
+      box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+    border-top: 1px solid #d3c2b0;
+}
+
+.button1 a:hover{
+color: #dbc5a8 !important; 
+}
+
+/*SQUISHY IMAGE*/
+.funnyimage {
+    position: absolute;
+    right: 1vmax; /*ADJUST WITH IMAGE SIZE*/
+    margin-top: -50px; /*ADJUST WITH IMAGE SIZE*/
+    z-index: 9999;
+    transition: 0.1s;
+}
+
+/*SQUISHY EFFECT*/ .funnyimage:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.funnyimage:active {
+    transform: scale(1.30, 0.80);
+}
+.boxwrapper b {
+    color: #000000;
+}
+/* --- END BOX CODE ---*/
