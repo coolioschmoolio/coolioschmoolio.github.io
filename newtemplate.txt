@@ -83,20 +83,23 @@ body {
 .progress div {
 	color: #000000 !important;
 }
+:root {
+  --bar-color: #000000 ; 
+}
 .progress:nth-child(1) .progress-bar {
-    background: rgba(1, 1, 1,1);
+    background: linear-gradient(270deg, rgb(from var(--bar-color) r g b / 0.8) 0%, rgb(from var(--bar-color) r g b / 0.5) 50%, rgb(from var(--bar-color) r g b / 0.25) 100%);
     border-radius: 5px !important
 }
 .progress:nth-child(2) .progress-bar {
-    background: rgba(1, 1, 1, .8);
+     background: linear-gradient(270deg, rgb(from var(--bar-color) r g b / 0.8) 0%, rgb(from var(--bar-color) r g b / 0.5) 50%, rgb(from var(--bar-color) r g b / 0.25) 100%);
     border-radius: 5px !important
 }
 .progress:nth-child(3) .progress-bar {
-    background: rgba(1, 1, 1, .5);
+     background: linear-gradient(270deg, rgb(from var(--bar-color) r g b / 0.8) 0%, rgb(from var(--bar-color) r g b / 0.5) 50%, rgb(from var(--bar-color) r g b / 0.25) 100%);
     border-radius: 5px !important
 }
 .progress:nth-child(4) .progress-bar {
-    background: rgba(1, 1, 1, .3);
+     background: linear-gradient(270deg, rgb(from var(--bar-color) r g b / 0.8) 0%, rgb(from var(--bar-color) r g b / 0.5) 50%, rgb(from var(--bar-color) r g b / 0.25) 100%);
     border-radius: 5px !important
 }
 
@@ -111,11 +114,20 @@ body {
 	color: #8f8f8f;
 }
 .breadcrumb::after {
-    content: "▸ content hersies";
+    content: "content hersies";
     color: var(--font-color);   
     position: absolute;
     right: 13%;
     z-index: 100;
+}
+/*"Lion's Player" replacement content*/
+#player > tbody > tr:nth-child(1) > td > small{
+font-size: 0px
+}
+#player > tbody > tr:nth-child(1) > td > small::after {
+content: "content hersies";
+font-size: 13px !important;
+color: var(--font-color) !important;
 }
 input.floatright { /*bookmark*/
 	background: #ffffff !important;
@@ -260,7 +272,7 @@ input,select,textarea {
 
 /* MAIN PANELS */
 .inner-table .left { /*level, stats, etc.*/
-	background: #000000 !important; 
+	background: linear-gradient(90deg, #ffffff 0%, #ffffff 50%, #ffffff 100%); !important
 	border-radius: 5px;
     color: #ffffff !important;
 }
@@ -278,6 +290,23 @@ td.right {
 }
 #clans .left, #allies .left {
     visibility: hidden;
+}
+center > b {
+    visibility: hidden;
+}
+.feature .xsmall {
+    display: none;
+}
+.feature select {
+      position: relative;
+    top: -30px;
+}
+.feature {
+    height: 80px;
+}
+.feature input{
+    position: relative;
+    top: -30px;
 }
 .bigger img {
     filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.5));
@@ -473,33 +502,35 @@ img[src$="icon-beetle-silver.png"] {
     content: url("URL") !important;
     width: 20px !important;
 }
+.dynastylist {
+    width: 20%;}
 img[src$="den_ancestors.png"] {
     content:url('URLHERE')!important;
-    width:75px!important; 
-    height:75px !important;
+    width:60px!important; 
+    height:60px !important;
     background:none!important;
 }
 img[src$="ancestorsfem.png"] {
     content:url('URLHERE')!important;
-    width:75px!important; 
-    height:75px !important;
+    width:60px!important; 
+    height:60px !important;
     background:none!important;
 }
 img[src$="den_achievements.png"] {
     content:url('URLHERE')!important;
-    width:75px!important; 
-    height:75px !important;
+    width:60px!important; 
+    height:60px !important;
     background:none!important;
 }
 img[src$="den_showcase.png"] {
     content:url('URLHERE')!important;
-    width:75px!important; 
-    height:75px !important;
+    width:60px!important; 
+    height:60px !important;
     background:none!important;
 }
 img[src$="den_beetlebook.png"] {
     content:url('URLHERE')!important;
-    width:75px!important; 
-    height:75px !important;
+    width:60px!important; 
+    height:60px !important;
     background:none!important;
 }
