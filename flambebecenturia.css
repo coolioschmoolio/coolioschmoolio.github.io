@@ -1,0 +1,735 @@
+/* FONT (From Google Fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
+:root {
+  --main-font: "Viaoda Libre", serif;
+}
+
+/* BACKGROUND */
+body {
+	background: url('https://i.ibb.co/Y7d4twrT/upscalemedia-transformed.jpg') center center fixed;
+	background-size: 100%;
+	font-family: 'Quicksand', sans-serif;
+	color: var(--font-color); 
+}
+
+/* MAIN PANEL */
+@media only screen and (max-width: 767px) {.container.main .hidden-xs {display: block !important;}}
+@media only screen and (max-width: 991px) and (min-width: 768px) {display: block !important;}
+@media only screen and (min-width: 1200px) {div.quote {width: 790px;}}
+.container.main {
+	background: linear-gradient(90deg, rgba(41,33,43,0.9) 0%, rgba(93,79,96,0.85) 20%, rgba(230,206,212,0.75) 80%, rgba(93,79,96,0.9) 100%);
+	border: 1px solid #000000;
+	box-shadow: 0px 40px 40px rgba(0,0,0,0.99);
+	border-radius: 3px;
+}
+.col-md-9 {
+	background: none;
+    border-right: none;
+}
+
+/* TOPBAR, NAVBAR */
+:root {
+  --primary-color: #483758;
+  --secondary-color: rgb(247,230,217);
+  --middle-color: #705384;
+  --flat-color: #c9b19c;
+  --font-color: #f5eee7;
+  --border-color: #d0c2d5;
+}
+:root {
+  --overlay-image: url('https://i.ibb.co/YBLdsJB9/rings2.png');
+}
+.topbar,.navbar,.panel {
+    color: var(--font-color); 
+    font-family: 'Quicksand', sans-serif;
+}
+.topbar {
+	background: var(--overlay-image) repeat center center, linear-gradient(90deg, var(--primary-color) 0%, #c29e85 50%, var(--secondary-color) 100%);
+	border: 1px solid var(--border-color);
+	border-top: none;
+	border-radius: 10px;
+}
+.navbar {
+	background: var(--overlay-image) repeat center center, linear-gradient(270deg, var(--primary-color) 0%, #c29e85 50%, var(--secondary-color) 100%);
+	border-bottom: 1px solid var(--border-color);
+	border-radius: 3px;
+}
+.navbar li a {
+	color: #f5eee7 !important;
+    text-shadow: 0px 0px 3px #5d286d !important;
+    transition: 0.2s;
+}
+.navbar li a:hover {
+    background: none !important;
+    transform: scale(1.15);
+}
+
+/* SIDE PANEL */
+.panel {
+	background: var(--overlay-image) repeat center center, linear-gradient(45deg, var(--middle-color) 0%, var(--flat-color) 50%, var(--secondary-color) 100%) !important;
+	box-shadow: none !important;
+	border: 1px solid var(--border-color) !important;
+	border-radius: 15px;
+	filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.7)) !important;
+}
+.panel-body {
+    color: var(--font-color) !important; 
+}
+.progress {
+	background: #cbaa8d; /*energy bar background*/
+	border-radius: 20px !important;
+}
+.progress div {
+	color: #000000 !important;
+}
+.progress:nth-child(1) .progress-bar {
+    background: linear-gradient(90deg, rgba(75,58,81,0.8) 0%, rgba(75,58,81,0.5) 50%, rgba(75,58,81,0.2) 100%);
+    border-radius: 5px !important
+}
+.progress:nth-child(2) .progress-bar {
+    background: linear-gradient(90deg, rgba(75,58,81,0.8) 0%, rgba(75,58,81,0.5) 50%, rgba(75,58,81,0.2) 100%);
+    border-radius: 5px !important
+}
+.progress:nth-child(3) .progress-bar {
+    background: linear-gradient(90deg, rgba(75,58,81,0.8) 0%, rgba(75,58,81,0.5) 50%, rgba(75,58,81,0.2) 100%);
+    border-radius: 5px !important
+}
+.progress:nth-child(4) .progress-bar {
+    background: linear-gradient(90deg, rgba(75,58,81,0.8) 0%, rgba(75,58,81,0.5) 50%, rgba(75,58,81,0.2) 100%);
+    border-radius: 5px !important
+}
+
+/* BREADCRUMB, BOOKMARK */
+.breadcrumb {
+	background: #C5A28A;
+    border: 1px solid var(--border-color);
+	border-radius: 10px;
+	filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.5)) !important;
+}
+.breadcrumb .active {
+	color: #f5ebe4;
+}
+.breadcrumb::after {
+    content: "𝒐𝒉, 𝒇𝒐𝒓𝒈𝒊𝒗𝒆 𝒎𝒆 𝑳𝒐𝒓𝒅, 𝒐𝒉, 𝒊'𝒎 𝒂 𝒈𝒐𝒐𝒅 𝒈𝒊𝒓𝒍";
+    color: var(--font-color);   
+    position: absolute;
+    right: 13%;
+    z-index: 100;
+}
+/*"Lion's Player" replacement content*/
+#player > tbody > tr:nth-child(1) > td > small{
+font-size: 0px
+}
+#player > tbody > tr:nth-child(1) > td > small::after {
+content: "𝒊'𝒅 𝒏𝒆𝒗𝒆𝒓 𝒉𝒖𝒓𝒕 𝒂 𝒇𝒍𝒚, 𝒃𝒖𝒕 𝑰'𝒗𝒆 𝒈𝒐𝒕 𝒘𝒂𝒍𝒍𝒔 𝒕𝒐 𝒄𝒍𝒊𝒎𝒃";
+font-size: 13px !important;
+color: #f5eee7 !important;
+}
+input.floatright { /*bookmark*/
+	background: #927A79 !important;
+	border: none !important;
+	color: #e2d2d1 !important;
+	border-radius: 15px !important;
+    font-weight: normal !important;
+	filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.5)) !important;
+}
+@media only screen and (max-width: 1199px) and (min-width: 992px)  {
+        .breadcrumb::after {
+            right: 20%;
+        }
+    }
+
+    @media only screen and (max-width: 991px) and (min-width: 768px)  {
+        .breadcrumb::after {
+            right: 20%;
+        }
+    }
+
+    @media only screen and (max-width: 767px) {
+        .breadcrumb::after {
+            right: 22%;
+        }
+    }
+
+/* HEADERS */
+h1 {
+	font-size: 0px;
+    text-align: center;
+}
+h1::before {
+     content: "flambebe's temple";
+    visibility: visible !important;
+    font-size: 60px;
+    background: -webkit-linear-gradient(270deg, #c48a57 0%, #c9b19c 60%, #f5e4d5 100%);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.65px rgba(243,232,225,0.4);
+    font-family: var(--main-font);
+    text-transform: uppercase;
+	text-align: center;
+    text-decoration: none;
+	filter: drop-shadow(3px 3px 3px rgba(31,6,47,0.7)) !important;
+}
+h2 {
+	  background: -webkit-linear-gradient(270deg, #c48a57 0%, #c9b19c 60%, #f5e4d5 100%);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     -webkit-text-stroke: 0.35px rgba(243,232,225,0.4);
+    font-family: var(--main-font);
+	font-size: 24px;
+	text-align: center;
+	filter: drop-shadow(2px 2px 2px rgba(31,6,47,0.7)) !important;
+}
+h3 {
+	color: #f3e9e1 !important;
+    font-family: var(--main-font);
+	font-size: 20px !important;
+    filter: drop-shadow(1px 1px 1px rgba(31,6,47,0.7)) !important;
+}
+.sidebar h3 {
+    background: -webkit-linear-gradient(270deg, #c48a57 0%, #c9b19c 60%, #f5e4d5 100%);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     -webkit-text-stroke: 0.35px rgba(243,232,225,0.4);
+    font-size: 22px !important;
+	text-align: left;
+    text-decoration: none; 
+	filter: drop-shadow(2px 2px 2px rgba(31,6,47,0.7)) !important;
+}
+
+/* ALERTS */
+.alert {
+	background: linear-gradient(270deg, var(--middle-color) 0%, var(--secondary-color) 50%, var(--middle-color) 100%);
+	border: 1px solid var(--border-color);
+	color: var(--font-color);
+	border-radius: 10px !important;
+}
+.alert-warning,.alert-danger {
+	background: linear-gradient(270deg, var(--middle-color) 0%, var(--secondary-color) 50%, var(--middle-color) 100%);
+	color: var(--font-color);
+	border-radius: 10px !important;
+}
+
+/* BUTTONS, FAPA */
+button.button, button.button:hover,.btn-default {
+	background: var(--flat-color) !important;
+    color: var(--font-color) !important;
+	border: 1px solid var(--border-color) !important;
+	border-radius: 19px !important;
+    text-shadow: none !important;
+	filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.7)) !important;
+}
+.feature { 
+	background: var(--flat-color) !important;
+	color: var(--font-color);
+	border: 1px solid var(--border-color)!important;
+	border-radius: 10px !important;
+	filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.7)) !important;
+}
+.feature,
+div.left {
+	background: var(--flat-color);
+	border: 1px solid var(--border-color);
+	border-radius: 5px !important; 
+}
+input#btnToggleSidebarChat {
+	background: var(--flat-color) !important;
+	border: 1px solid var(--border-color) !important;
+	border-radius: 2px !important;
+    font-weight: normal !important;
+}
+.dynastylist {
+    width: 20%;}
+
+/* PANEL BACKGROUND COLOR */
+.table {
+	background: linear-gradient(180deg, #29202C 0%, #5c4b62 50%, #74647a 100%);
+	border: 1px solid #000000 !important;
+	border-collapse: separate;
+	border-radius: 3px;
+	filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.7)) !important;
+}
+hr {
+    visibility: hidden;
+}
+
+/* HEADERS COLOR */
+.top,.bottom,th {
+	background: var(--overlay-image) repeat center center, linear-gradient(270deg, var(--middle-color) 0%, var(--secondary-color) 50%, var(--middle-color) 100%)!important;
+	color: var(--font-color) !important;
+	border-radius: 3px;
+ 	border-bottom: 1px solid var(--border-color) !important;
+}
+td.bottom a {
+    text-decoration: none !important;
+}
+
+/* EDIT DETAILS BOX */
+.table .left {
+	background: #29202C;
+    color: #c0b3a7 !important;
+}
+input,select,textarea { 
+	background: #f7ede3 !important;
+	border: none !important;
+	border-radius: 5px;
+	box-shadow: none !important;
+	color: black !important;
+	text-shadow: none !important;
+}
+
+/* MAIN PANELS */
+.inner-table .left { /*level, stats, etc.*/
+	background: linear-gradient(90deg, rgba(48,34,54,0.9) 0%, rgba(75,58,81,0.9) 50%, rgba(104,86,111,0.9) 100%); !important
+	border-radius: 5px;
+    color: #beaa9c !important;
+}
+.inner-table .right { /*where the numbers and stuff go*/
+	background: #E9D3C3;
+	border-radius: 5px !important;
+    color: #67535F !important;
+	filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.7)) !important;
+}
+td.right {
+	border-radius: 3px !important;
+}
+.right_odd {
+	background: none !important;
+}
+#clans .left, #allies .left {
+    visibility: hidden;
+}
+.bigger img {
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.5));
+}
+#sparring {
+    height: 35px !important;
+    display: flex;
+    overflow-y: hidden !important;
+    transition: 1s;  
+}
+.feature select {
+      position: relative;
+    top: -30px;
+}
+.feature {
+    height: 80px;
+}
+.feature input{
+    position: relative;
+    top: -30px;
+}
+#sparring:hover {
+    height: 160px!important;
+    overflow-y: hidden !important;
+    transition: 1s;
+}
+center > b {
+    visibility: hidden;
+}
+.feature .xsmall {
+    display: none;
+}
+
+/* LINKS & LINK HOVER COLOR */
+a:link,a:visited {
+	color: #291636 !important;
+}
+.top a, .bottom a, .th a {
+    color: #291636 !important;
+}
+.cave-grid a, .mound-grid a {
+    color: #291636 !important;
+}
+a:hover {
+	color: #f3e9df !important;
+}
+
+/* BOX CONTAINER */
+
+    @media only screen and (max-width: 767px) {
+        .container.main .hidden-xs {
+            display: block !important;
+        }
+    }
+
+.boxcontainer {
+	background: none;
+	height: auto;
+	padding: 0px;
+	justify-content: center;
+	display: flex;
+}
+
+
+/* SCROLL BAR */
+::-webkit-scrollbar {
+	width: 12px;
+	height: 7px;
+}
+::-webkit-scrollbar-track {
+	background: var(--primary-color);
+}
+::-webkit-scrollbar-thumb {
+	background: var(--secondary-color);
+	border-radius: 10px;
+}
+
+/* CIRCULAR LION AND USER AVATAR */
+div#lion_image {
+	border-radius: 20% !important;
+	overflow: hidden;
+	margin-top: 15px;
+	margin-left: 10px;
+    border: 1px solid var(--border-color);
+}
+table#player img {
+	border-radius: 0% !important;
+	overflow: hidden;
+}
+#about > tbody > tr:nth-child(1) > td > div::before {
+    content:'High Priestess';
+    font-size:17px;
+    color: #291636 !important;
+    
+}
+
+/* CAVE CODE BY FELID #114852 */
+#fraOrganizationBlock {
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-template-rows: auto auto auto;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    position: relative;
+}
+#fraOrganizationBlock > div:nth-child(1) > a > div {
+    width: 150px;
+    height: 110px;
+    color: #B79E97;
+    padding: 10px;
+    margin: 10px;
+    background: linear-gradient(90deg, rgba(48,34,54,0.9) 0%, rgba(75,58,81,0.9) 50%, rgba(104,86,111,0.9) 100%); !important
+    margin-top: 0px !important; 
+    border: none;
+   filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.7)) !important;
+}
+#fraOrganizationBlock > div:nth-child(2) > div, #fraOrganizationBlock > div:nth-child(2) > a > div {
+    width: 150px;
+    height: 110px;
+        filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.7)) !important;
+    color: #B79E97;
+    padding: 9px;
+    margin: 10px;
+      border: none;
+    background: linear-gradient(90deg, rgba(48,34,54,0.9) 0%, rgba(75,58,81,0.9) 50%, rgba(104,86,111,0.9) 100%); !important
+}
+#fraOrganizationBlock > div:nth-child(3) > a > div {
+    width: 150px;
+    height: 110px;
+        filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.7)) !important;
+    color: #B79E97;
+    padding: 10px;
+    margin: 10px;
+      border: none;
+    background: linear-gradient(90deg, rgba(48,34,54,0.9) 0%, rgba(75,58,81,0.9) 50%, rgba(104,86,111,0.9) 100%); !important
+}
+
+/*KILL EXTRA UNSORTED BUTTON*/ #pride:nth-child(6) {
+    display: none;
+}
+.cave-grid {
+    transition: 0.2s;
+}
+.cave-grid:hover {
+    transform: scale(1.05);
+}
+#pride th {
+    background: linear-gradient(270deg, var(--middle-color) 0%, var(--flat-color) 50%, var(--secondary-color) 100%)!important;
+    width: 1000px;
+     border: 1px solid var(--border-color);
+    position: sticky;
+    top: 0px;
+    margin-top: 0px !important;
+    z-index: 999;
+    font-size: 15px;
+        filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.7)) !important;
+}
+#fraCaveList > table {
+    height: 40px !important;
+    overflow: hidden !important;
+    transition: 0.2s; 
+    display: block;
+   border: none !important;
+        filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.55)) !important;
+}
+#pride:nth-child(7) {
+    display: none;
+}
+.mound-grid {
+    display: none;
+}
+#fraCaveList {
+    grid-area: 1 / 2 / 4 / 3;
+}
+img[src$="//static.lioden.com/images/layout/unsortedlionsbanner.png"] {
+    content: url('https://static.lioden.com/images/items/Other/app_tonkinesemane.png') !important;
+    filter: saturate(40%) !important;
+    width: 50px;
+}
+img[src$="//static.lioden.com/images/layout/nestingbanner.png"] {
+    content: url('https://static.lioden.com/images/items/Other/app_tonkinesemarkings.png') !important;
+    filter: saturate(40%) !important;
+    width: 50px;
+}
+img[src$="//static.lioden.com/images/layout/prideoverviewbanner.png"] {
+    content: url('https://static.lioden.com/images/items/Other/app_tonkinesebase.png') !important;
+    filter: saturate(40%) !important;
+    width: 50px;
+}
+@media only screen and (max-width: 767px) {
+        .container.main .hidden-xs {
+            display: block !important;
+        }
+}
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+	display: block !important;
+}
+@media only screen and (min-width: 1200px) {
+		div.quote {
+			width: 790px;
+		}
+	}
+
+
+/* COMMENT BOX*/
+div#commentBox, div.comment {
+    background: #E9D3C3 !important;
+    color: #2F2235;
+    border: 1px solid rgba(113,105,113,0.2);
+}
+small.text-muted {color: #594462;}
+small.text-muted a {color: #827388 !important;
+}
+#commentBox::before { /*comment box header*/
+    content: "𝘩𝘢𝘷𝘦 𝘢 𝘤𝘰𝘯𝘧𝘦𝘴𝘴𝘪𝘰𝘯?";
+    background: linear-gradient(270deg, var(--middle-color) 0%, var(--secondary-color) 50%, var(--middle-color)100%);
+    font-weight: bold;
+    color: #443150 !important;
+    width: 100%;
+    height: 35px;
+    display: block;
+    padding-top:7px !important;
+    position: sticky!important;
+    top: 0px;
+}
+div#commentBox {
+    height: 35px;
+    overflow-y: hidden !important;
+    transition: 1s;
+}
+#commentBox:hover {
+    height: 225px !important;
+    overflow-y: scroll !important;
+    transition: 1s;
+}
+
+img[src$="default.png"] {
+    content: url("https://static.lioden.com/images/dynamic/backgrounds/buriedruins.png"); 
+}
+
+/* IMAGES */
+div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img { /*lioden logo*/ 
+	content: url('https://i.ibb.co/hx5XhZL3/image-ezgif-com-resize.png');
+    margin-top: -20px;
+}
+img[src$="icon-beetle-gold.png"] {
+    content: url("https://i.ibb.co/xtFKtjkN/eellobeele.png") !important;
+    width: 20px !important;
+}
+img[src$="icon-beetle-silver.png"] {
+    content: url("https://i.ibb.co/6JY7rFy8/urplebeeble.png") !important;
+    width: 20px !important;
+}
+img[src$="den_ancestors.png"] {
+    content:url('https://static.lioden.com/images/items/Background/seraphimwatcher.png')!important;
+    width:60px!important; 
+    height:60px !important;
+    background:none!important;
+}
+img[src$="ancestorsfem.png"] {
+    content:url('https://static.lioden.com/images/items/Background/heavenlyfalls.png')!important;
+       width:60px!important; 
+    height:60px !important;
+    background:none!important;
+}
+img[src$="den_achievements.png"] {
+    content:url('https://static.lioden.com/images/items/Background/denofsalvation.png')!important;
+        width:60px!important; 
+    height:60px !important;
+    background:none!important;
+}
+img[src$="den_showcase.png"] {
+    content:url('https://static.lioden.com/images/items/Background/pathofsalvation.png')!important;
+       width:60px!important; 
+    height:60px !important;
+    background:none!important;
+}
+img[src$="den_beetlebook.png"] {
+    content:url('https://static.lioden.com/images/items/Background/pathofsalvation.png')!important;
+        width:60px!important; 
+    height:60px !important;
+    background:none!important;
+}
+/* --- BOX CODE BY FELID #114852 ---*/
+/*BOX WRAPPER*/ .boxwrapper {
+    background: url('https://i.ibb.co/3mYdjPDc/modified.png') center center fixed;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+/*BOX HEADER*/ .boxcontainer1 {
+    color: #ece1d8 !important;
+	background: linear-gradient(90deg, #1b1020 0%, #42324a 50%, #1b1020 100%);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top: 1px solid #7a6a83;
+	justify-content: center;
+	display: flex;
+}
+
+/*BOX HEADER CONTENT*/ .box1 {
+    color: #ece1d8 !important;
+	float: left;
+	background: transparent;
+	border: none;;
+	padding: 10px;
+	border-radius: 5px;
+	margin: 10px;
+	min-height: 50px;
+	width: 70%;
+	overflow: auto;
+}
+
+/*BOX HEADER - H2 TEXT EDITS*/
+/*you can delete this if you dont want to use h2*/
+.boxcontainer1 h2 {
+    font-size: 20px !important; margin: 0px; 
+}
+
+/*BOX MAIN/MIDDLE*/ .boxcontainer2 {
+    background: transparent;
+    display: grid;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0px;
+    grid-template-columns: 2fr 2fr;
+    grid-auto-rows: 50px;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+/*BASE BREEDER BUTTON CONTAINMENT*/ .box2 {
+	background: none;
+	padding: 10px;
+	border-radius: 5px;
+	margin: 10px;
+	min-height: 50px;
+	width: 100%;
+	overflow: auto;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    z-index: 999;
+}
+
+/*LEFT BOX*/ .box3 {
+	background: linear-gradient(0deg, #231629 0%, #42324a 50%, #5c4d64 100%);
+    color: #ece1d8;
+    border: none;
+	padding: 10px;
+	border-radius: 5px;
+	margin: 10px;
+	min-height: 50px;
+	width: 100%;
+	overflow: auto;
+    scrollbar-color: #fff #000;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+
+/*RIGHT BOX*/ .box4 {
+	background: linear-gradient(0deg, #231629 0%, #42324a 50%, #5c4d64 100%);
+    color: #ece1d8;
+    border: none;
+	padding: 10px;
+	border-radius: 5px;
+	margin: 10px;
+	min-height: 50px;
+	overflow: auto;
+    scrollbar-color: #C9AD95 #000;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    justify-content: center;
+}
+
+/*FOOTER*/ .buttoncontainer {
+    background: url('https://i.ibb.co/Y7d4twrT/upscalemedia-transformed.jpg') center center fixed;
+    width: 100%;
+	padding-bottom: 15px;
+    padding-top: 5px;
+    overflow: auto;
+	display: flex;
+    justify-content: center;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom: 1px solid #93859c;
+}
+
+/*BUTTONS*/ .button1 a{
+    background: linear-gradient(0deg, #cc9d73 0%, #c9b19c 60%, #f5e4d5 100%);
+    color: #5a3a51 !important; 
+    font-size: 16px;
+    border-radius: 5px;
+    transition: 0.2s;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: block;
+      box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+    border-top: 1px solid #f5efe9;
+}
+
+.button1 a:hover{
+color: #eeede2 !important; 
+}
+
+/*SQUISHY IMAGE*/
+.funnyimage {
+    position: absolute;
+    right: 1vmax; /*ADJUST WITH IMAGE SIZE*/
+    margin-top: -60px; /*ADJUST WITH IMAGE SIZE*/
+    z-index: 9999;
+    transition: 0.1s;
+}
+
+/*SQUISHY EFFECT*/ .funnyimage:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.funnyimage:active {
+    transform: scale(1.30, 0.80);
+}
+.boxwrapper b {
+    color: #000000;
+}
+/* --- END BOX CODE ---*/
