@@ -1,0 +1,599 @@
+/* FONT (From Google Fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+:root {
+  --main-font: "Cinzel Decorative", serif;
+}
+
+/* BACKGROUND */
+body {
+	background: url('https://i.ibb.co/nMvtC6kn/upscalemedia-transformed-7.png') center center fixed;
+	background-size: 100%;
+	font-family: 'Quicksand', sans-serif;
+	color: var(--font-color); 
+}
+
+/* MAIN PANEL */
+@media only screen and (max-width: 767px) {.container.main .hidden-xs {display: block !important;}}
+@media only screen and (max-width: 991px) and (min-width: 768px) {display: block !important;}
+@media only screen and (min-width: 1200px) {div.quote {width: 790px;}}
+.container.main {
+	background: linear-gradient(90deg, rgba(53,59,64,0.9) 0%, rgba(126, 128, 130,0.875) 20%, rgba(126, 128, 130,0.875) 80%, rgba(53,59,64,0.9) 100%);
+	border: 1px solid #222020;
+	border-radius: 3px;
+}
+.col-md-9 {
+	background: none;
+    border-right: none;
+}
+
+/* TOPBAR, NAVBAR */
+:root {
+  --primary-color: #766C72;
+  --secondary-color: #818880;
+  --middle-color: #766C72;
+  --flat-color: #7E7F7C;
+  --font-color: #c2bdc2;
+  --border-color: #aaa6aa;
+}
+:root {
+  --overlay-image: url('https://i.ibb.co/DHqfvkq4/splla.png');
+}
+.topbar,.navbar,.panel {
+    color: var(--font-color); 
+    font-family: 'Quicksand', sans-serif;
+}
+.topbar {
+	background: var(--overlay-image) repeat center center, linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 80%);
+	border: 1px solid var(--border-color);
+	border-top: none;
+	border-radius: 10px;
+}
+.navbar {
+	background: var(--overlay-image) repeat center center, linear-gradient(270deg, var(--primary-color) 0%, var(--secondary-color) 80%);
+	border-bottom: 1px solid var(--border-color);
+	border-radius: 3px;
+}
+.navbar li a {
+	color: #c8ccc6 !important;
+    text-shadow: 0px 0px 3px #666066 !important;
+    transition: 0.2s;
+}
+.navbar li a:hover {
+    background: none !important;
+    transform: scale(1.15);
+}
+
+/* SIDE PANEL */
+.panel {
+	background: var(--overlay-image) repeat center center, linear-gradient(45deg, var(--middle-color) 0%, var(--flat-color) 50%, var(--secondary-color) 100%) !important;
+	box-shadow: none !important;
+	border: 1px solid var(--border-color) !important;
+	border-radius: 15px;
+	filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.5)) !important;
+}
+.panel-body {
+    color: var(--font-color) !important; 
+}
+.progress {
+	background: #B2B2B2; /*energy bar background*/
+	border-radius: 20px !important;
+}
+.progress div {
+	color: #000000 !important;
+}
+:root {
+  --bar-color: #4d4249 ; 
+}
+.progress:nth-child(1) .progress-bar {
+    background: linear-gradient(270deg, rgb(from var(--bar-color) r g b / 0.8) 0%, rgb(from var(--bar-color) r g b / 0.5) 50%, rgb(from var(--bar-color) r g b / 0.25) 100%);
+    border-radius: 5px !important
+}
+.progress:nth-child(2) .progress-bar {
+     background: linear-gradient(270deg, rgb(from var(--bar-color) r g b / 0.8) 0%, rgb(from var(--bar-color) r g b / 0.5) 50%, rgb(from var(--bar-color) r g b / 0.25) 100%);
+    border-radius: 5px !important
+}
+.progress:nth-child(3) .progress-bar {
+     background: linear-gradient(270deg, rgb(from var(--bar-color) r g b / 0.8) 0%, rgb(from var(--bar-color) r g b / 0.5) 50%, rgb(from var(--bar-color) r g b / 0.25) 100%);
+    border-radius: 5px !important
+}
+.progress:nth-child(4) .progress-bar {
+     background: linear-gradient(270deg, rgb(from var(--bar-color) r g b / 0.8) 0%, rgb(from var(--bar-color) r g b / 0.5) 50%, rgb(from var(--bar-color) r g b / 0.25) 100%);
+    border-radius: 5px !important
+}
+
+/* BREADCRUMB, BOOKMARK */
+.breadcrumb {
+	background: #7C7C7A;
+    border: 1px solid var(--border-color);
+	border-radius: 10px;
+	filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3)) !important;
+}
+.breadcrumb .active {
+	color: #33332c;
+}
+.breadcrumb::after {
+    content: "𝒑𝒐𝒊𝒔𝒐𝒏 𝒐𝒏 𝒕𝒉𝒆 𝒊𝒏𝒔𝒊𝒅𝒆, 𝒊 𝒄𝒐𝒖𝒍𝒅 𝒃𝒆 𝒚𝒐𝒖𝒓 𝒂𝒏𝒕𝒊𝒅𝒐𝒕𝒆 𝒕𝒐𝒏𝒊𝒈𝒉𝒕";
+    color: var(--font-color);   
+    position: absolute;
+    right: 11%;
+    z-index: 100;
+}
+/*"Lion's Player" replacement content*/
+#player > tbody > tr:nth-child(1) > td > small{
+font-size: 0px
+}
+#player > tbody > tr:nth-child(1) > td > small::after {
+content: "𝒊 𝒄𝒂𝒏 𝒔𝒎𝒆𝒍𝒍 𝒚𝒐𝒖𝒓 𝒔𝒊𝒄𝒌𝒏𝒆𝒔𝒔, 𝑰 𝒄𝒂𝒏 𝒄𝒖𝒓𝒆 𝒚𝒂";
+font-size: 13px !important;
+color: var(--font-color) !important;
+}
+input.floatright {
+    background: url(https://i.ibb.co/PzYRqBXW/bWVIFFc.gif) 0 0 no-repeat !important;
+    display:block;
+    height: 70px;
+    width: 70px;
+    overflow:visible;
+    text-indent:-99999em;
+    background-size: 70px 70px !important;
+    margin-top: -20px;
+    border: none !important;
+	filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.7)) !important;
+}
+@media only screen and (max-width: 1199px) and (min-width: 992px)  {
+        .breadcrumb::after {
+            right: 20%;
+        }
+    }
+
+    @media only screen and (max-width: 991px) and (min-width: 768px)  {
+        .breadcrumb::after {
+            right: 20%;
+        }
+    }
+
+    @media only screen and (max-width: 767px) {
+        .breadcrumb::after {
+            right: 22%;
+        }
+    }
+
+/* HEADERS */
+h1 {
+    font-size: 65px;
+    background: -webkit-linear-gradient(270deg, #b3bab4 0%, #888E89 60%, #5f6661 100%);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px rgba(199,204,200,0.2);
+    font-family: var(--main-font);
+    text-transform: uppercase;
+	text-align: center;
+    text-decoration: none;
+	filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.7)) !important;
+}
+h2 {
+	color: #b3bab4;
+    font-family: var(--main-font);
+	font-size: 24px;
+	text-align: center;
+	filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.7)) !important;
+}
+h3 {
+	color: #b3bab4 !important;
+    font-family: var(--main-font);
+	font-size: 16px !important
+}
+.sidebar h3 {
+    background: -webkit-linear-gradient(270deg, #b3bab4 0%, #888E89 60%, #5f6661 100%);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     -webkit-text-stroke: 0.4px rgba(199,204,200,0.2);
+    font-size: 20px !important;
+	text-align: left;
+    text-decoration: none; 
+	filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.6)) !important;
+}
+
+/* ALERTS */
+.alert {
+	background: linear-gradient(270deg, var(--middle-color) 0%, var(--secondary-color) 50%, var(--middle-color) 100%);
+	border: 1px solid var(--border-color);
+	color: var(--font-color);
+	border-radius: 10px !important;
+}
+.alert-warning,.alert-danger {
+	background: linear-gradient(270deg, var(--middle-color) 0%, var(--secondary-color) 50%, var(--middle-color) 100%);
+	color: var(--font-color);
+	border-radius: 10px !important;
+}
+
+/* BUTTONS, FAPA */
+button.button, button.button:hover,.btn-default {
+	background: var(--flat-color) !important;
+    color: var(--font-color) !important;
+	border: 1px solid var(--border-color) !important;
+	border-radius: 19px !important;
+    text-shadow: none !important;
+	filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.5)) !important;
+}
+.feature { 
+	background: var(--flat-color) !important;
+	color: var(--font-color);
+	border: 1px solid var(--border-color)!important;
+	border-radius: 10px;
+	filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.5)) !important;
+}
+.feature,
+div.left {
+	background: var(--flat-color);
+	border: 1px solid var(--border-color);
+	border-radius: 5px !important;
+}
+input#btnToggleSidebarChat {
+	background: var(--flat-color) !important;
+	border: 1px solid var(--border-color) !important;
+	border-radius: 2px !important;
+    font-weight: normal !important;
+}
+
+/* PANEL BACKGROUND COLOR */
+.table {
+	background: linear-gradient(180deg, #505551 0%, #8E928F 50%, #999e9a 100%);
+	border: 1px solid #333834 !important;
+	border-collapse: separate;
+	border-radius: 3px;
+	filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.5)) !important;
+}
+hr {
+    visibility: hidden;
+}
+
+/* HEADERS COLOR */
+.top,.bottom,th {
+	background: var(--overlay-image) repeat center center, linear-gradient(270deg, var(--middle-color) 0%, var(--secondary-color) 50%, var(--middle-color) 100%)!important;
+	color: var(--font-color) !important;
+	border-radius: 3px;
+ 	border-bottom: 1px solid var(--border-color) !important;
+}
+td.bottom a {
+    text-decoration: none !important;
+}
+
+/* EDIT DETAILS BOX */
+.table .left {
+	background: #666263;
+    color: #b7afb2 !important;
+}
+input,select,textarea { 
+	background: #d1cacc !important;
+	border: none !important;
+	border-radius: 5px;
+	box-shadow: none !important;
+	color: black !important;
+	text-shadow: none !important;
+}
+
+/* MAIN PANELS */
+.inner-table .left { /*level, stats, etc.*/
+	background: linear-gradient(90deg, #6b636d 0%, #7D787E 50%, #8c878d 100%); !important
+	border-radius: 5px;
+    color: #cfcbcb !important;
+}
+.inner-table .right { /*where the numbers and stuff go*/
+	background: #bbb9b9;
+	border-radius: 5px !important;
+    color: #534b56 !important;
+	filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.4)) !important;
+}
+td.right {
+	border-radius: 3px !important;
+}
+.right_odd {
+	background: none !important;
+}
+#clans .left, #allies .left {
+    visibility: hidden;
+}
+center > b {
+    visibility: hidden;
+}
+.feature .xsmall {
+    display: none;
+}
+.feature select {
+      position: relative;
+    top: -30px;
+}
+.feature {
+    height: 80px;
+}
+.feature input{
+    position: relative;
+    top: -30px;
+}
+.bigger img {
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.5));
+}
+/* LINKS & LINK HOVER COLOR */
+a:link,a:visited {
+	color: #343631 !important;
+}
+.top a, .bottom a, .th a {
+    color: #343631 !important;
+}
+.cave-grid a, .mound-grid a {
+    color: #343631 !important;
+}
+a:hover {
+	color: #c0c4b9 !important;
+}
+
+/* BOX CONTAINER */
+
+    @media only screen and (max-width: 767px) {
+        .container.main .hidden-xs {
+            display: block !important;
+        }
+    }
+
+.boxcontainer {
+	background: none;
+	height: auto;
+	padding: 0px;
+	justify-content: center;
+	display: flex;
+}
+
+/* BOXES */
+.Box1 {
+	float: left;
+	background: linear-gradient(180deg, #D3D7D5 0%, #b1b5b4 50%, #858887  100%);
+	color: #424745;
+	padding: 10px;
+	border: 1px solid #686b6a;
+	border-radius: 5px;
+	margin: 10px;
+	overflow: auto;
+	height: auto;
+	max-height: 250px;
+	width: 250px;
+	margin-bottom: 15px;
+}
+.Box2 {
+	float: left;
+	background: linear-gradient(180deg, #D3D7D5 0%, #b1b5b4 50%, #858887 100%);
+	color: #424745;
+	padding: 10px;
+	border: 1px solid #686b6a;
+	border-radius: 10px;
+	margin: 10px;
+	height: auto;
+	max-height: 340px;
+	width: 385px;
+	overflow: auto;
+}
+.Box3 {
+	float: left;
+	background: linear-gradient(180deg, #D3D7D5 0%, #b1b5b4 50%, #858887  100%);
+	color: #424745;
+	padding: 10px;
+	border: 1px solid #686b6a;
+	border-radius: 10px;
+	margin: 10px;
+	height: auto;
+	max-height: 300px;
+	width: 790px;
+	overflow: auto;
+}
+
+/* SCROLL BAR */
+::-webkit-scrollbar {
+	width: 12px;
+	height: 7px;
+}
+::-webkit-scrollbar-track {
+	background: var(--primary-color);
+}
+::-webkit-scrollbar-thumb {
+	background: var(--secondary-color);
+	border-radius: 10px;
+}
+
+/* CIRCULAR LION AND USER AVATAR */
+div#lion_image {
+    content: url('https://i.ibb.co/J9D0SGm/image.png') !important;
+    height: 210px;
+	overflow: hidden;
+	margin-top: 8px;
+	margin-left: 10px;
+}
+table#player img {
+	border-radius: 0% !important;
+	overflow: hidden;
+}
+
+/* Affects the color behind "_ Unsorted", "_ Pregnant Lionesses", etc. and cave/mound names */
+.cave-grid,.mound-grid {
+	background: linear-gradient(180deg, var(--flat-color) 0%, var(--secondary-color) 100%) !important;
+	border: 1px solid var(--border-color) !important;
+    color: var(--font-color) !important;
+	border-radius: 5px !important;
+    filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.7));
+}
+
+
+/* Affects the color behind "_ Unsorted", "_ Pregnant Lionesses", etc. and cave/mound names */
+.cave-grid,.mound-grid {
+	background: linear-gradient(180deg, var(--flat-color) 0%, var(--secondary-color) 100%) !important;
+	border: 1px solid var(--border-color) !important;
+    color: var(--font-color) !important;
+	border-radius: 5px !important;
+    filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.5));
+}
+
+/* CAVES (Copy paste to add more) */
+a[href$="245168"]>div.cave-grid>img {
+	content: url('https://i.ibb.co/hxfp9Xqd/scream.png')!important;
+ 	height:140px;
+   	object-fit: cover;
+   	object-position: 0% 0;
+   	min-width: 0 !important;
+   	width: 100% !important;
+}
+a[href$="340269"]>div.cave-grid>img {
+	content: url('https://i.ibb.co/LXGKpVv4/stab.png')!important;
+ 	height:140px;
+   	object-fit: cover;
+   	object-position: 0% 0;
+   	min-width: 0 !important;
+   	width: 100% !important;
+}
+a[href$="252859"]>div.cave-grid>img {
+	content: url('https://i.ibb.co/nqBxWPhP/snek.png')!important;
+ 	height:140px;
+   	object-fit: cover;
+   	object-position: 0% 0;
+   	min-width: 0 !important;
+   	width: 100% !important;
+}
+a[href$="257888"]>div.cave-grid>img {
+	content: url('https://i.ibb.co/VckFfXwn/run.png')!important;
+ 	height:140px;
+   	object-fit: cover;
+   	object-position: 0% 0;
+   	min-width: 0 !important;
+   	width: 100% !important;
+}
+a[href$="lionoverview.php?id=309066"]>div.cave-grid>img {
+    content: url('https://i.imgur.com/lHbe5sD.png')!important;
+}
+a[href$="unsorted.php?id=309066"]>div.cave-grid>img {
+    content: url('https://i.imgur.com/eZpfGm8.png')!important;
+}
+div.cave-grid>img {
+        content: url('https://i.imgur.com/T0XoBQU.png')!important; 
+}
+.mound-grid img {
+background: url("https://www.lioden.com/images/items/Amusement/awdskull.png");
+    width: 0;
+    height: 0;
+    padding-top: 80px;
+    padding-right: 100px;
+
+}
+
+/* COMMENT BOX*/
+div#commentBox, div.comment {
+    background: #BBB9B9 !important;
+    color: #585555;
+    border: 1px solid rgba(113, 105, 109,0.2);
+}
+small.text-muted {color: #6d6969;}
+small.text-muted a {color: #888484 !important;
+}
+#commentBox::before { /*comment box header*/
+    content: "𝘥𝘢𝘳𝘦 𝘵𝘰 𝘭𝘦𝘢𝘷𝘦 𝘢 𝘮𝘦𝘴𝘴𝘢𝘨𝘦?";
+    background: linear-gradient(270deg, var(--middle-color) 0%, var(--secondary-color) 50%, var(--middle-color)100%);
+    font-weight: bold;
+    color: var(--font-color);
+    width: 100%;
+    height: 35px;
+    display: block;
+    padding-top:7px !important;
+    position: sticky!important;
+    top: 0px;
+}
+div#commentBox {
+    height: 35px;
+    overflow-y: hidden !important;
+    transition: 1s;
+}
+#commentBox:hover {
+    height: 225px !important;
+    overflow-y: scroll !important;
+    transition: 1s;
+}
+
+img[src$="default.png"] {
+    content: url("https://static.lioden.com/images/dynamic/backgrounds/heavycloudsBG.png"); 
+}
+
+/* IMAGES */
+div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
+	content: url('https://i.imgur.com/1ud2GbP.png');
+    margin-top: -10px; margin-left: 0px; 
+}
+img[src$="icon-beetle-gold.png"] {
+content: url("https://i.imgur.com/ilWVfIT.png") !important;
+width: 20px !important;
+}
+img[src$="icon-beetle-silver.png"] {
+content: url("https://i.imgur.com/PlrsRpP.png") !important;
+width: 20px !important;
+}
+.dynastylist {
+    width: 20%;}
+img[src$="den_ancestors.png"] {
+    content:url('https://static.lioden.com/images/items/Decoration/deertushhorseskull.png')!important;
+    width:60px!important; 
+    height:60px !important;
+    background:none!important;
+}
+img[src$="ancestorsfem.png"] {
+    content:url('https://static.lioden.com/images/items/Decoration/arabianbustard.png')!important;
+    width:60px!important; 
+    height:60px !important;
+    background:none!important;
+}
+img[src$="den_achievements.png"] {
+    content:url('https://static.lioden.com/images/items/Decoration/senegalcoucal.png')!important;
+    width:60px!important; 
+    height:60px !important;
+    background:none!important;
+}
+img[src$="den_showcase.png"] {
+    content:url('https://static.lioden.com/images/items/Decoration/Piedbabbler.png')!important;
+    width:60px!important; 
+    height:60px !important;
+    background:none!important;
+}
+img[src$="den_beetlebook.png"] {
+    content:url('https://static.lioden.com/images/items/Decoration/thickbilledcuckoo.png')!important;
+    width:60px!important; 
+    height:60px !important;
+    background:none!important;
+}
+.pagedoll {
+    position: fixed;
+    height: 140px;
+    width: auto;
+    bottom: 0px;
+    left: 5px;
+    z-index: 99999;
+    transition: 0.5s;
+    text-align: center;
+}
+.pagedoll:hover {
+    height: 150px;
+}
+.pagedoll img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: auto;
+    transition: opacity 0s ease;
+}
+.img-default {
+    opacity: 1;
+}
+.img-hover {
+    opacity: 0;
+    pointer-events: none;
+}
+.pagedoll:hover .img-default {
+    opacity: 0;
+}
+.pagedoll:hover .img-hover {
+    opacity: 1;
+}
