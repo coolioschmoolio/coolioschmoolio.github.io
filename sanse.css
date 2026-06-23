@@ -517,6 +517,17 @@ div#commentBox {
 img[src$="default.png"] {
     content: url("https://static.lioden.com/images/dynamic/backgrounds/heavycloudsBG.png"); 
 }
+/* Codes made by Pandora #144118 and Kat .:Red Lion of Voltron:. #94329 
+Codes may be edited, used in commissions or for personal use
+Please do not remove credit
+*/
+ 
+/* CUSTOM KING TITLE - AFTER */
+
+#about > tbody > tr:nth-child(1) > td > div::after {
+    content:', the Wretched Wanderer';
+    font-size:17px;
+}
 
 /* IMAGES */
 div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
