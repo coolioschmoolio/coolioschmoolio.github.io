@@ -678,6 +678,9 @@ img[src$="den_beetlebook.png"] {
     grid-row-end: 5;
     justify-content: center;
 }
+#lightlink a {
+    color: #a99ab1;
+}
 
 /*FOOTER*/ .buttoncontainer {
     background: url('https://i.ibb.co/Y7d4twrT/upscalemedia-transformed.jpg') center center fixed;
