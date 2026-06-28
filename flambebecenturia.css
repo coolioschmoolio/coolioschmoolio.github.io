@@ -679,7 +679,7 @@ img[src$="den_beetlebook.png"] {
     justify-content: center;
 }
 #lightlink a {
-    color: #a99ab1;
+    color: #a99ab1; !important
 }
 
 /*FOOTER*/ .buttoncontainer {
