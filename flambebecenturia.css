@@ -671,7 +671,7 @@ img[src$="den_beetlebook.png"] {
 	margin: 10px;
 	min-height: 50px;
 	overflow: auto;
-    scrollbar-color: #C9AD95 #000;
+    scrollbar-color: #CCA17A #27192D;
     grid-column-start: 2;
     grid-column-end: 2;
     grid-row-start: 1;
