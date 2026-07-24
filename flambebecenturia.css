@@ -385,8 +385,9 @@ div#lion_image {
     border: 1px solid var(--border-color);
 }
 table#player img {
-	border-radius: 0% !important;
+	border-radius: 20% !important;
 	overflow: hidden;
+	border: 1px solid var(--border-color);
 }
 #about > tbody > tr:nth-child(1) > td > div::before {
     content:'High Priestess';
