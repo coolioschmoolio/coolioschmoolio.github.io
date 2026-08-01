@@ -98,6 +98,10 @@ body {
     background: linear-gradient(270deg, rgba(221,198,159,0.8) 0%, rgba(221,198,159,0.5) 50%, rgba(221,198,159,0.2) 100%);
     border-radius: 5px !important
 }
+.progress:nth-child(5) .progress-bar {
+    background: linear-gradient(270deg, rgba(221,198,159,0.8) 0%, rgba(221,198,159,0.5) 50%, rgba(221,198,159,0.2) 100%);
+    border-radius: 5px !important
+}
 
 /* BREADCRUMB, BOOKMARK */
 .breadcrumb {
