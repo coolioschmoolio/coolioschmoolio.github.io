@@ -452,7 +452,6 @@ img[src$="//static.lioden.com/images/layout/cavedefault.jpg"] {
     padding-top: 60px;
     padding-right: 60px;
 }
-}
 
 /* COMMENT BOX*/
 div#commentBox, div.comment {
