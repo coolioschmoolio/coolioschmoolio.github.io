@@ -1,0 +1,540 @@
+/* FONT (From Google Fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap');
+:root {
+  --main-font: "Jolly Lodger", system-ui;
+}
+
+/* BACKGROUND */
+body {
+	background: url('https://i.imgur.com/OZPvGsr.jpeg') center center fixed;
+	background-size: 100%;
+	font-family: 'Quicksand', sans-serif;
+	color: var(--font-color); 
+}
+
+/* MAIN PANEL */
+@media only screen and (max-width: 767px) {.container.main .hidden-xs {display: block !important;}}
+@media only screen and (max-width: 991px) and (min-width: 768px) {display: block !important;}
+@media only screen and (min-width: 1200px) {div.quote {width: 790px;}}
+.container.main {
+	background: linear-gradient(90deg, rgba(94,28,2,0.75) 0%, rgba(48,15,1,0.8) 20%, rgba(0,0,0,0.8) 80%, rgba(94,28,2,0.75) 100%);
+	border: 1px solid #aa7059;
+	box-shadow: 0 0 55px #000000;
+	border-radius: 3px;
+}
+.col-md-9 {
+	background: none;
+    border-right: none;
+}
+
+/* TOPBAR, NAVBAR */
+:root {
+  --primary-color: #270200;
+  --secondary-color: #f38a53;
+  --middle-color: #6b1906;
+  --flat-color: #8f4016;
+  --font-color: #fbd5b3;
+  --border-color: #ca723c;
+}
+:root {
+  --overlay-image: url('https://i.imgur.com/14ccwxM.png');
+}
+.topbar,.navbar,.panel {
+    color: var(--font-color); 
+    font-family: 'Quicksand', sans-serif;
+}
+.topbar {
+	background: var(--overlay-image) repeat center center, linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 80%);
+	border: 1px solid var(--border-color);
+	border-top: none;
+	border-radius: 10px;
+}
+.navbar {
+	background: var(--overlay-image) repeat center center, linear-gradient(270deg, var(--primary-color) 0%, var(--secondary-color) 80%);
+	border-bottom: 1px solid var(--border-color);
+	border-radius: 3px;
+}
+.navbar li a {
+	color: #ffdaba !important;
+    text-shadow: 0px 0px 3px #7c2e0a !important;
+    transition: 0.2s;
+}
+.navbar li a:hover {
+    background: none !important;
+    transform: scale(1.15);
+}
+
+/* SIDE PANEL */
+.panel {
+	background: var(--overlay-image) repeat center center, linear-gradient(45deg, var(--middle-color) 0%, var(--flat-color) 50%, var(--secondary-color) 100%) !important;
+	box-shadow: none !important;
+	border: 1px solid var(--border-color) !important;
+	border-radius: 15px;
+	filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.5)) !important;
+}
+.panel-body {
+    color: var(--font-color) !important; 
+}
+.progress {
+	background: #f3aa6c; /*energy bar background*/
+	border-radius: 20px !important;
+}
+.progress div {
+	color: #270200 !important;
+}
+:root {
+  --bar-color: #6d2000 ; 
+}
+.progress:nth-child(1) .progress-bar {
+    background: linear-gradient(270deg, rgb(from var(--bar-color) r g b / 0.8) 0%, rgb(from var(--bar-color) r g b / 0.5) 50%, rgb(from var(--bar-color) r g b / 0.25) 100%);
+    border-radius: 5px !important
+}
+.progress:nth-child(2) .progress-bar {
+     background: linear-gradient(270deg, rgb(from var(--bar-color) r g b / 0.8) 0%, rgb(from var(--bar-color) r g b / 0.5) 50%, rgb(from var(--bar-color) r g b / 0.25) 100%);
+    border-radius: 5px !important
+}
+.progress:nth-child(3) .progress-bar {
+     background: linear-gradient(270deg, rgb(from var(--bar-color) r g b / 0.8) 0%, rgb(from var(--bar-color) r g b / 0.5) 50%, rgb(from var(--bar-color) r g b / 0.25) 100%);
+    border-radius: 5px !important
+}
+.progress:nth-child(4) .progress-bar {
+     background: linear-gradient(270deg, rgb(from var(--bar-color) r g b / 0.8) 0%, rgb(from var(--bar-color) r g b / 0.5) 50%, rgb(from var(--bar-color) r g b / 0.25) 100%);
+    border-radius: 5px !important
+}
+
+/* BREADCRUMB, BOOKMARK */
+.breadcrumb {
+	background: #B5603A;
+    border: 1px solid var(--border-color);
+	border-radius: 10px;
+	filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.7)) !important;
+}
+.breadcrumb .active {
+	color: #ffd0ba;
+}
+.breadcrumb::after {
+    content: "Ѽ css by coolio";
+    color: var(--font-color);   
+    position: absolute;
+    right: 13%;
+    z-index: 100;
+}
+/*"Lion's Player" replacement content*/
+#player > tbody > tr:nth-child(1) > td > small{
+font-size: 0px
+}
+#player > tbody > tr:nth-child(1) > td > small::after {
+content: "𖦹˖°.🎃 ̟࿔*:⋆";
+font-size: 13px !important;
+color: var(--font-color) !important;
+}
+input.floatright { /*bookmark*/
+	background: #72341E !important;
+	border: none !important;
+	color: #e08f72 !important;
+	border-radius: 15px !important;
+    font-weight: normal !important;
+	filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.7)) !important;
+}
+@media only screen and (max-width: 1199px) and (min-width: 992px)  {
+        .breadcrumb::after {
+            right: 20%;
+        }
+    }
+
+    @media only screen and (max-width: 991px) and (min-width: 768px)  {
+        .breadcrumb::after {
+            right: 20%;
+        }
+    }
+
+    @media only screen and (max-width: 767px) {
+        .breadcrumb::after {
+            right: 22%;
+        }
+    }
+
+/* HEADERS */
+h1 {
+    font-size: 74px;
+    background: -webkit-linear-gradient(270deg, #b75b23 0%, #d07d48 60%, #F3AA6C 100%);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1.2px rgba(55,20,5,0.5);
+    font-family: var(--main-font);
+    text-transform: uppercase;
+	text-align: center;
+    text-decoration: none;
+	filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.7)) !important;
+}
+h2 {
+	color: #F3AA6C;
+    font-family: var(--main-font);
+	font-size: 28px;
+	text-align: center;
+	filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.5)) !important;
+}
+h3 {
+	color: #F3AA6C !important;
+    font-family: var(--main-font);
+	font-size: 20px !important
+}
+.sidebar h3 {
+    background: -webkit-linear-gradient(270deg, #b75b23 0%, #d07d48 60%, #F3AA6C 100%);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     -webkit-text-stroke: 0.4px rgba(55,20,5,0.5);
+    font-size: 28px !important;
+	text-align: left;
+    text-decoration: none; 
+	filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.7)) !important;
+}
+
+/* ALERTS */
+.alert {
+	background: linear-gradient(270deg, var(--middle-color) 0%, var(--secondary-color) 50%, var(--middle-color) 100%);
+	border: 1px solid var(--border-color);
+	color: var(--font-color);
+	border-radius: 10px !important;
+}
+.alert-warning,.alert-danger {
+	background: linear-gradient(270deg, var(--middle-color) 0%, var(--secondary-color) 50%, var(--middle-color) 100%);
+	color: var(--font-color);
+	border-radius: 10px !important;
+}
+
+/* BUTTONS, FAPA */
+button.button, button.button:hover,.btn-default {
+	background: var(--flat-color) !important;
+    color: var(--font-color) !important;
+	border: 1px solid var(--border-color) !important;
+	border-radius: 19px !important;
+    text-shadow: none !important;
+	filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.7)) !important;
+}
+.feature { 
+	background: var(--flat-color) !important;
+	color: var(--font-color);
+	border: 1px solid var(--border-color)!important;
+	border-radius: 10px;
+	filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.7)) !important;
+}
+.feature,
+div.left {
+	background: var(--flat-color);
+	border: 1px solid var(--border-color);
+	border-radius: 5px !important;
+}
+input#btnToggleSidebarChat {
+	background: var(--flat-color) !important;
+	border: 1px solid var(--border-color) !important;
+	border-radius: 2px !important;
+    font-weight: normal !important;
+}
+
+/* PANEL BACKGROUND COLOR */
+.table {
+	background: linear-gradient(180deg, #3a1101 0%, #601B00 50%, #862f0d 100%);
+	border: 1px solid #000000 !important;
+	border-collapse: separate;
+	border-radius: 3px;
+	filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.7)) !important;
+}
+hr {
+    visibility: hidden;
+}
+
+/* HEADERS COLOR */
+.top,.bottom,th {
+	background: var(--overlay-image) repeat center center, linear-gradient(270deg, var(--middle-color) 0%, var(--secondary-color) 50%, var(--middle-color) 100%)!important;
+	color: var(--font-color) !important;
+	border-radius: 3px;
+ 	border-bottom: 1px solid var(--border-color) !important;
+}
+td.bottom a {
+    text-decoration: none !important;
+}
+
+/* EDIT DETAILS BOX */
+.table .left {
+	background: #3a1101;
+    color: #eab792 !important;
+}
+input,select,textarea { 
+	background: #eab792 !important;
+	border: none !important;
+	border-radius: 5px;
+	box-shadow: none !important;
+	color: black !important;
+	text-shadow: none !important;
+}
+
+/* MAIN PANELS */
+.inner-table .left { /*level, stats, etc.*/
+	background: linear-gradient(90deg, #7a310b 0%, #8A3E17 50%, #a04f26 100%); !important
+	border-radius: 5px;
+    color: #F3AA6C !important;
+}
+.inner-table .right { /*where the numbers and stuff go*/
+	background: #F3AA6C;
+	border-radius: 5px !important;
+    color: #5e2405 !important;
+	filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.7)) !important;
+}
+td.right {
+	border-radius: 3px !important;
+}
+.right_odd {
+	background: none !important;
+}
+#clans .left, #allies .left {
+    visibility: hidden;
+}
+center > b {
+    visibility: hidden;
+}
+.feature .xsmall {
+    display: none;
+}
+.feature select {
+      position: relative;
+    top: -30px;
+}
+.feature {
+    height: 80px;
+}
+.feature input{
+    position: relative;
+    top: -30px;
+}
+.bigger img {
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.5));
+}
+/* LINKS & LINK HOVER COLOR */
+a:link,a:visited {
+	color: #f5c399 !important;
+    filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.7));
+}
+.top a, .bottom a, .th a {
+    color: #f5c399 !important;
+}
+.cave-grid a, .mound-grid a {
+    color: #f5c399 !important;
+}
+a:hover {
+	color: #f9ece0 !important;
+}
+
+/* BOX CONTAINER */
+
+    @media only screen and (max-width: 767px) {
+        .container.main .hidden-xs {
+            display: block !important;
+        }
+    }
+
+.boxcontainer {
+	background: none;
+	height: auto;
+	padding: 0px;
+	justify-content: center;
+	display: flex;
+}
+
+/* BOXES */
+.Box1 {
+	float: left;
+	background: llinear-gradient(180deg, #8d3a10 0%, #782808 50%, #622005 100%);
+	color: #f1b99d;
+	padding: 10px;
+	border: 1px solid #a4542b;
+	border-radius: 5px;
+	margin: 10px;
+	overflow: auto;
+	height: auto;
+	max-height: 250px;
+	width: 250px;
+	margin-bottom: 15px;
+}
+.Box2 {
+	float: left;
+	background: linear-gradient(180deg, #8d3a10 0%, #782808 50%, #622005 100%);
+	color: #f1b99d;
+	padding: 10px;
+	border: 1px solid #a4542b;
+	border-radius: 10px;
+	margin: 10px;
+	height: auto;
+	max-height: 250px;
+	width: 385px;
+	overflow: auto;
+}
+.Box3 {
+	float: left;
+	background: linear-gradient(180deg, #8d3a10 0%, #782808 50%, #622005 100%);
+	color: #f1b99d;
+	padding: 10px;
+	border: 1px solid #a4542b;
+	border-radius: 10px;
+	margin: 10px;
+	height: auto;
+	max-height: 300px;
+	width: 790px;
+	overflow: auto;
+}
+
+/* SCROLL BAR */
+::-webkit-scrollbar {
+	width: 12px;
+	height: 7px;
+}
+::-webkit-scrollbar-track {
+	background: var(--primary-color);
+}
+::-webkit-scrollbar-thumb {
+	background: var(--secondary-color);
+	border-radius: 10px;
+}
+
+/* CIRCULAR LION AND USER AVATAR */
+div#lion_image {
+	border-radius: 20% !important;
+	overflow: hidden;
+	margin-top: 15px;
+	margin-left: 10px;
+    border: 1px solid var(--border-color);
+}
+table#player img {
+	border-radius: 0% !important;
+	overflow: hidden;
+}
+
+/* Affects the color behind "_ Unsorted", "_ Pregnant Lionesses", etc. and cave/mound names */
+.cave-grid,.mound-grid {
+	background: linear-gradient(180deg, var(--flat-color) 0%, var(--secondary-color) 100%) !important;
+	border: 1px solid var(--border-color) !important;
+    color: var(--font-color) !important;
+	border-radius: 5px !important;
+    filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.7));
+}
+
+/* CAVES AND MOUNDS */
+img[src$="//static.lioden.com/images/layout/unsortedlionsbanner.png"] {
+    content: url('https://static.lioden.com/images/layout/pumpkin1on.png') !important;
+    height:80px;
+    width: 80px; 
+}
+img[src$="//static.lioden.com/images/layout/nestingbanner.png"] {
+    content: url('https://static.lioden.com/images/layout/pumpkin2on.png') !important;
+    height:80px;
+    width: 80px;
+}
+img[src$="//static.lioden.com/images/layout/prideoverviewbanner.png"] {
+    content: url('https://static.lioden.com/images/layout/pumpkin3on.png') !important;
+    height:80px;
+    width: 80px;
+}
+img[src$="//static.lioden.com/images/layout/cavedefault.jpg"] {
+    content: url('https://static.lioden.com/images/npc/bat.png') !important;
+    height:100px;
+   	object-fit: cover;
+   	object-position: 0;
+   	min-width: 0 !important;
+   	width: 100% !important;
+}
+.mound-grid img {
+    background: url("https://static.lioden.com/images/items/Other/crunchyworm.png");
+    width: 0;
+    background-size: 60px !important; 
+    background-repeat: no-repeat;
+    background-size: cover;     
+    height: 0;
+    padding-top: 60px;
+    padding-right: 60px;
+}
+
+
+/* COMMENT BOX*/
+div#commentBox, div.comment {
+    background: #EAB792 !important;
+    color: #542a0c;
+    border: 1px solid rgba(113, 105, 109,0.2);
+}
+small.text-muted {color: #7c461f;}
+small.text-muted a {color: #7c461f !important;
+     filter: none !important;
+}
+#commentBox::before { /*comment box header*/
+    content: "leave a comment here!";
+    background: linear-gradient(270deg, var(--middle-color) 0%, var(--secondary-color) 50%, var(--middle-color)100%);
+    font-weight: bold;
+    color: var(--font-color);
+    width: 100%;
+    height: 35px;
+    display: block;
+    padding-top:7px !important;
+    position: sticky!important;
+    top: 0px;
+}
+div#commentBox {
+    height: 35px;
+    overflow-y: hidden !important;
+    transition: 1s;
+}
+#commentBox:hover {
+    height: 225px !important;
+    overflow-y: scroll !important;
+    transition: 1s;
+}
+
+img[src$="default.png"] {
+    content: url("https://static.lioden.com/images/dynamic/backgrounds/halloween.png"); 
+}
+
+/* IMAGES */
+div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img { /*lioden logo*/ 
+	content: url('https://i.imgur.com/IlRDmdQ.png');
+    margin-top:-30px;
+}
+img[src$="icon-beetle-gold.png"] {
+    content: url("https://i.imgur.com/oXBS6kb.png") !important;
+    width: 20px !important;
+    
+}
+img[src$="icon-beetle-silver.png"] {
+    content: url("https://i.imgur.com/ZwqinD5.png") !important;
+    width: 20px !important;
+}
+.dynastylist {
+    width: 20%;}
+img[src$="den_ancestors.png"] {
+    content:url('https://www.lioden.com/images/items/Decoration/goetia_vapula.png')!important;
+    width:60px!important; 
+    height:60px !important;
+    background:none!important;
+}
+img[src$="ancestorsfem.png"] {
+    content:url('https://static.lioden.com/images/items/Decoration/zagan.png')!important;
+    width:60px!important; 
+    height:60px !important;
+    background:none!important;
+}
+img[src$="den_achievements.png"] {
+    content:url('https://static.lioden.com/images/items/Decoration/sitri.png')!important;
+    width:60px!important; 
+    height:60px !important;
+    background:none!important;
+}
+img[src$="den_showcase.png"] {
+    content:url('https://static.lioden.com/images/items/Decoration/raum.png')!important;
+    width:60px!important; 
+    height:60px !important;
+    background:none!important;
+}
+img[src$="den_beetlebook.png"] {
+    content:url('https://static.lioden.com/images/items/Decoration/glaslabdemon.png')!important;
+    width:60px!important; 
+    height:60px !important;
+    background:none!important;
+}
