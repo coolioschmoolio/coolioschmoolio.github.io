@@ -1,0 +1,535 @@
+/* FONT (From Google Fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+:root {
+  --main-font: "Architects Daughter", cursive;
+}
+
+/* BACKGROUND */
+body {
+	background: url('https://images.unsplash.com/photo-1792657521948-95a820993616?q=80&w=672&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D') center center fixed;
+	background-size: 100%;
+	font-family: 'Quicksand', sans-serif;
+	color: var(--font-color); 
+}
+
+/* MAIN PANEL */
+@media only screen and (max-width: 767px) {.container.main .hidden-xs {display: block !important;}}
+@media only screen and (max-width: 991px) and (min-width: 768px) {display: block !important;}
+@media only screen and (min-width: 1200px) {div.quote {width: 790px;}}
+.container.main {
+	background: linear-gradient(90deg, rgba(158,149,141,0.8) 0%, rgba(239,234,227,0.75) 20%, rgba(239,234,227,0.75) 80%, rgba(158,149,141,0.8) 100%);
+	border: 1px solid #dccebd;
+	box-shadow: 0 0 55px rgba(234,228,205,0.5);
+	border-radius: 3px;
+}
+.col-md-9 {
+	background: none;
+    border-right: none;
+}
+
+/* TOPBAR, NAVBAR */
+:root {
+  --primary-color: #E89534;
+  --secondary-color: #d2dfe2;
+  --middle-color: #eaab61;
+  --flat-color: #D6D0BE;
+  --font-color: #693006;
+  --border-color: #dccebd;
+}
+:root {
+  --overlay-image: url('https://i.imgur.com/ypDi2O9.png');
+}
+.topbar,.navbar,.panel {
+    color: var(--font-color); 
+    font-family: 'Quicksand', sans-serif;
+}
+.topbar {
+	background: var(--overlay-image) repeat center center, linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 80%);
+	border: 1px solid var(--border-color);
+	border-top: none;
+	border-radius: 10px;
+}
+.navbar {
+	background: var(--overlay-image) repeat center center, linear-gradient(270deg, var(--primary-color) 0%, var(--secondary-color) 80%);
+	border-bottom: 1px solid var(--border-color);
+	border-radius: 3px;
+}
+.navbar li a {
+	color: #f8f4e8 !important;
+    text-shadow: 0px 0px 3px #5b3305 !important;
+    transition: 0.2s;
+}
+.navbar li a:hover {
+    background: none !important;
+    transform: scale(1.15);
+}
+
+/* SIDE PANEL */
+.panel {
+	background: var(--overlay-image) repeat center center, linear-gradient(45deg, var(--middle-color) 0%, var(--flat-color) 50%, var(--secondary-color) 100%) !important;
+	box-shadow: none !important;
+	border: 1px solid var(--border-color) !important;
+	border-radius: 15px;
+	filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.2)) !important;
+}
+.panel-body {
+    color: var(--font-color) !important; 
+}
+.progress {
+	background: #f8f4e8; /*energy bar background*/
+	border-radius: 20px !important;
+}
+.progress div {
+	color: #3c1d02 !important;
+}
+:root {
+  --bar-color: #E89534 ; 
+}
+.progress:nth-child(1) .progress-bar {
+    background: linear-gradient(270deg, rgb(from var(--bar-color) r g b / 0.8) 0%, rgb(from var(--bar-color) r g b / 0.5) 50%, rgb(from var(--bar-color) r g b / 0.25) 100%);
+    border-radius: 5px !important
+}
+.progress:nth-child(2) .progress-bar {
+     background: linear-gradient(270deg, rgb(from var(--bar-color) r g b / 0.8) 0%, rgb(from var(--bar-color) r g b / 0.5) 50%, rgb(from var(--bar-color) r g b / 0.25) 100%);
+    border-radius: 5px !important
+}
+.progress:nth-child(3) .progress-bar {
+     background: linear-gradient(270deg, rgb(from var(--bar-color) r g b / 0.8) 0%, rgb(from var(--bar-color) r g b / 0.5) 50%, rgb(from var(--bar-color) r g b / 0.25) 100%);
+    border-radius: 5px !important
+}
+.progress:nth-child(4) .progress-bar {
+     background: linear-gradient(270deg, rgb(from var(--bar-color) r g b / 0.8) 0%, rgb(from var(--bar-color) r g b / 0.5) 50%, rgb(from var(--bar-color) r g b / 0.25) 100%);
+    border-radius: 5px !important
+}
+
+/* BREADCRUMB, BOOKMARK */
+.breadcrumb {
+	background: #D9C5A6;
+    border: 1px solid var(--border-color);
+	border-radius: 10px;
+	filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.25)) !important;
+}
+.breadcrumb .active {
+	color: #fff8ee;
+}
+.breadcrumb::after {
+    content: "content hersies";
+    color: var(--font-color);   
+    position: absolute;
+    right: 13%;
+    z-index: 100;
+}
+/*"Lion's Player" replacement content*/
+#player > tbody > tr:nth-child(1) > td > small{
+font-size: 0px
+}
+#player > tbody > tr:nth-child(1) > td > small::after {
+content: "content hersies";
+font-size: 13px !important;
+color: var(--font-color) !important;
+}
+input.floatright { /*bookmark*/
+	background: #E0B074 !important;
+	border: none !important;
+	color: #000000 !important;
+	border-radius: 15px !important;
+    font-weight: normal !important;
+	filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.7)) !important;
+}
+@media only screen and (max-width: 1199px) and (min-width: 992px)  {
+        .breadcrumb::after {
+            right: 20%;
+        }
+    }
+
+    @media only screen and (max-width: 991px) and (min-width: 768px)  {
+        .breadcrumb::after {
+            right: 20%;
+        }
+    }
+
+    @media only screen and (max-width: 767px) {
+        .breadcrumb::after {
+            right: 22%;
+        }
+    }
+
+/* HEADERS */
+h1 {
+    font-size: 70px;
+    background: -webkit-linear-gradient(270deg, #8f8f8f 0%, #8f8f8f 60%, #8f8f8f 100%);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1.2px rgba(0,0,0,0.5);
+    font-family: var(--main-font);
+    text-transform: uppercase;
+	text-align: center;
+    text-decoration: none;
+	filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.7)) !important;
+}
+h2 {
+	color: #8f8f8f;
+    font-family: var(--main-font);
+	font-size: 24px;
+	text-align: center;
+	filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.7)) !important;
+}
+h3 {
+	color: #8f8f8f !important;
+    font-family: var(--main-font);
+	font-size: 20px !important
+}
+.sidebar h3 {
+    background: -webkit-linear-gradient(270deg, #8f8f8f 0%, #8f8f8f 60%, #8f8f8f 100%);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     -webkit-text-stroke: 0.4px rgba(0,0,0,0.5);
+    font-size: 20px !important;
+	text-align: left;
+    text-decoration: none; 
+	filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.7)) !important;
+}
+
+/* ALERTS */
+.alert {
+	background: linear-gradient(270deg, var(--middle-color) 0%, var(--secondary-color) 50%, var(--middle-color) 100%);
+	border: 1px solid var(--border-color);
+	color: var(--font-color);
+	border-radius: 10px !important;
+}
+.alert-warning,.alert-danger {
+	background: linear-gradient(270deg, var(--middle-color) 0%, var(--secondary-color) 50%, var(--middle-color) 100%);
+	color: var(--font-color);
+	border-radius: 10px !important;
+}
+
+/* BUTTONS, FAPA */
+button.button, button.button:hover,.btn-default {
+	background: var(--flat-color) !important;
+    color: var(--font-color) !important;
+	border: 1px solid var(--border-color) !important;
+	border-radius: 19px !important;
+    text-shadow: none !important;
+	filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.7)) !important;
+}
+.feature { 
+	background: var(--flat-color) !important;
+	color: var(--font-color);
+	border: 1px solid var(--border-color)!important;
+	border-radius: 10px;
+	filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.7)) !important;
+}
+.feature,
+div.left {
+	background: var(--flat-color);
+	border: 1px solid var(--border-color);
+	border-radius: 5px !important;
+}
+input#btnToggleSidebarChat {
+	background: var(--flat-color) !important;
+	border: 1px solid var(--border-color) !important;
+	border-radius: 2px !important;
+    font-weight: normal !important;
+}
+
+/* PANEL BACKGROUND COLOR */
+.table {
+	background: linear-gradient(180deg, #8f8f8f 0%, #8f8f8f 50%, #8f8f8f 100%);
+	border: 1px solid #000000 !important;
+	border-collapse: separate;
+	border-radius: 3px;
+	filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.7)) !important;
+}
+hr {
+    visibility: hidden;
+}
+
+/* HEADERS COLOR */
+.top,.bottom,th {
+	background: var(--overlay-image) repeat center center, linear-gradient(270deg, var(--middle-color) 0%, var(--secondary-color) 50%, var(--middle-color) 100%)!important;
+	color: var(--font-color) !important;
+	border-radius: 3px;
+ 	border-bottom: 1px solid var(--border-color) !important;
+}
+td.bottom a {
+    text-decoration: none !important;
+}
+
+/* EDIT DETAILS BOX */
+.table .left {
+	background: #000000;
+    color: #8f8f8f !important;
+}
+input,select,textarea { 
+	background: #ffffff !important;
+	border: none !important;
+	border-radius: 5px;
+	box-shadow: none !important;
+	color: black !important;
+	text-shadow: none !important;
+}
+
+/* MAIN PANELS */
+.inner-table .left { /*level, stats, etc.*/
+	background: linear-gradient(90deg, #ffffff 0%, #ffffff 50%, #ffffff 100%); !important
+	border-radius: 5px;
+    color: #ffffff !important;
+}
+.inner-table .right { /*where the numbers and stuff go*/
+	background: #ffffff;
+	border-radius: 5px !important;
+    color: #000000 !important;
+	filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.7)) !important;
+}
+td.right {
+	border-radius: 3px !important;
+}
+.right_odd {
+	background: none !important;
+}
+#clans .left, #allies .left {
+    visibility: hidden;
+}
+center > b {
+    visibility: hidden;
+}
+.feature .xsmall {
+    display: none;
+}
+.feature select {
+      position: relative;
+    top: -30px;
+}
+.feature {
+    height: 80px;
+}
+.feature input{
+    position: relative;
+    top: -30px;
+}
+.bigger img {
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.5));
+}
+/* LINKS & LINK HOVER COLOR */
+a:link,a:visited {
+	color: #000000 !important;
+}
+.top a, .bottom a, .th a {
+    color: #000000 !important;
+}
+.cave-grid a, .mound-grid a {
+    color: #000000 !important;
+}
+a:hover {
+	color: #ffffff !important;
+}
+
+/* BOX CONTAINER */
+
+    @media only screen and (max-width: 767px) {
+        .container.main .hidden-xs {
+            display: block !important;
+        }
+    }
+
+.boxcontainer {
+	background: none;
+	height: auto;
+	padding: 0px;
+	justify-content: center;
+	display: flex;
+}
+
+/* BOXES */
+.Box1 {
+	float: left;
+	background: linear-gradient(180deg, #ffffff 0%, #afafaf 50%, #444444 100%);
+	color: #000000;
+	padding: 10px;
+	border: 1px solid #000000;
+	border-radius: 5px;
+	margin: 10px;
+	overflow: auto;
+	height: auto;
+	max-height: 250px;
+	width: 250px;
+	margin-bottom: 15px;
+}
+.Box2 {
+	float: left;
+	background: linear-gradient(180deg, #ffffff 0%, #afafaf 50%, #444444 100%);
+	color: #000000;
+	padding: 10px;
+	border: 1px solid #000000;
+	border-radius: 10px;
+	margin: 10px;
+	height: auto;
+	max-height: 250px;
+	width: 385px;
+	overflow: auto;
+}
+.Box3 {
+	float: left;
+	background: linear-gradient(180deg, #ffffff 0%, #afafaf 50%, #444444 100%);
+	color: #000000;
+	padding: 10px;
+	border: 1px solid #000000;
+	border-radius: 10px;
+	margin: 10px;
+	height: auto;
+	max-height: 300px;
+	width: 790px;
+	overflow: auto;
+}
+
+/* SCROLL BAR */
+::-webkit-scrollbar {
+	width: 12px;
+	height: 7px;
+}
+::-webkit-scrollbar-track {
+	background: var(--primary-color);
+}
+::-webkit-scrollbar-thumb {
+	background: var(--secondary-color);
+	border-radius: 10px;
+}
+
+/* CIRCULAR LION AND USER AVATAR */
+div#lion_image {
+	border-radius: 20% !important;
+	overflow: hidden;
+	margin-top: 15px;
+	margin-left: 10px;
+    border: 1px solid var(--border-color);
+}
+table#player img {
+	border-radius: 0% !important;
+	overflow: hidden;
+}
+
+/* Affects the color behind "_ Unsorted", "_ Pregnant Lionesses", etc. and cave/mound names */
+.cave-grid,.mound-grid {
+	background: linear-gradient(180deg, var(--flat-color) 0%, var(--secondary-color) 100%) !important;
+	border: 1px solid var(--border-color) !important;
+    color: var(--font-color) !important;
+	border-radius: 5px !important;
+    filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.7));
+}
+
+/* CAVES AND MOUNDS */
+img[src$="//static.lioden.com/images/layout/unsortedlionsbanner.png"] {
+    content: url('URL') !important;
+    height:80px;
+    width: 80px; 
+}
+img[src$="//static.lioden.com/images/layout/nestingbanner.png"] {
+    content: url('URL') !important;
+    height:80px;
+    width: 80px;
+}
+img[src$="//static.lioden.com/images/layout/prideoverviewbanner.png"] {
+    content: url('URL') !important;
+    height:80px;
+    width: 80px;
+}
+img[src$="//static.lioden.com/images/layout/cavedefault.jpg"] {
+    content: url('URL') !important;
+    height:100px;
+   	object-fit: cover;
+   	object-position: 0% 0;
+   	min-width: 0 !important;
+   	width: 100% !important;
+}
+.mound-grid img {
+    background: url("URL");
+    width: 0;
+    background-size: 60px !important; 
+    background-repeat: no-repeat;
+    background-size: cover;     
+    height: 0;
+    padding-top: 60px;
+    padding-right: 60px;
+}
+
+/* COMMENT BOX*/
+div#commentBox, div.comment {
+    background: #ffffff !important;
+    color: #000000;
+    border: 1px solid rgba(113, 105, 109,0.2);
+}
+small.text-muted {color: #60545a;}
+small.text-muted a {color: #60545a !important;
+}
+#commentBox::before { /*comment box header*/
+    content: "message here";
+    background: linear-gradient(270deg, var(--middle-color) 0%, var(--secondary-color) 50%, var(--middle-color)100%);
+    font-weight: bold;
+    color: var(--font-color);
+    width: 100%;
+    height: 35px;
+    display: block;
+    padding-top:7px !important;
+    position: sticky!important;
+    top: 0px;
+}
+div#commentBox {
+    height: 35px;
+    overflow-y: hidden !important;
+    transition: 1s;
+}
+#commentBox:hover {
+    height: 225px !important;
+    overflow-y: scroll !important;
+    transition: 1s;
+}
+
+img[src$="default.png"] {
+    content: url("URL"); 
+}
+
+/* IMAGES */
+div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img { /*lioden logo*/ 
+	content: url('IMG');
+}
+img[src$="icon-beetle-gold.png"] {
+    content: url("URL") !important;
+    width: 20px !important;
+}
+img[src$="icon-beetle-silver.png"] {
+    content: url("URL") !important;
+    width: 20px !important;
+}
+.dynastylist {
+    width: 20%;}
+img[src$="den_ancestors.png"] {
+    content:url('URLHERE')!important;
+    width:60px!important; 
+    height:60px !important;
+    background:none!important;
+}
+img[src$="ancestorsfem.png"] {
+    content:url('URLHERE')!important;
+    width:60px!important; 
+    height:60px !important;
+    background:none!important;
+}
+img[src$="den_achievements.png"] {
+    content:url('URLHERE')!important;
+    width:60px!important; 
+    height:60px !important;
+    background:none!important;
+}
+img[src$="den_showcase.png"] {
+    content:url('URLHERE')!important;
+    width:60px!important; 
+    height:60px !important;
+    background:none!important;
+}
+img[src$="den_beetlebook.png"] {
+    content:url('URLHERE')!important;
+    width:60px!important; 
+    height:60px !important;
+    background:none!important;
+}
