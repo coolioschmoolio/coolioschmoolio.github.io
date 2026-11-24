@@ -466,6 +466,7 @@ table#player img {
     overflow: hidden !important;
     transition: 0.2s; 
     display: block;
+	width: 90%;
    border: none !important;
         filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.55)) !important;
 }
