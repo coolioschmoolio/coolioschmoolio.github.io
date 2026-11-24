@@ -724,8 +724,8 @@ color: #eeede2 !important;
 /*SQUISHY IMAGE*/
 .funnyimage {
     position: absolute;
-    right: 1vmax; /*ADJUST WITH IMAGE SIZE*/
-    margin-top: -60px; /*ADJUST WITH IMAGE SIZE*/
+    right: 4vmax; /*ADJUST WITH IMAGE SIZE*/
+    margin-top: -47px; /*ADJUST WITH IMAGE SIZE*/
     z-index: 9999;
     transition: 0.1s;
 }
