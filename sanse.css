@@ -605,6 +605,15 @@ img[src$="den_beetlebook.png"] {
 .pagedoll:hover .img-default {
     opacity: 0;
 }
+
+.navbar::after{
+  content: url('https://f2.toyhou.se/file/f2-toyhou-se/images/131763849_bCi6faQNFnIktw4.gif');
+  position: absolute;
+  z-index: 100;
+  right: -70px;
+  top: -105px;
+  transform: scale(.45);  
+}
 .pagedoll:hover .img-hover {
     opacity: 1;
 }
